@@ -3,6 +3,7 @@
     export let data: PageData;
 </script>
 
+<h1>Scegli una stazione da vedere:</h1>
 <ul>
     {#each data.pageRoutes as { name, url }}
         <li>
@@ -13,7 +14,7 @@
 
 <style lang="postcss">
     ul {
-        @apply list-item;
+        @apply list-disc;
     }
 
     a {
