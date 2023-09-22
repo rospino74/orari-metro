@@ -37,3 +37,11 @@ export const sortTransits = (arr: Array<Transit>): Array<Transit> => arr.sort((a
     // Infine controllo quale delle due destinazioni viene prima
     return destA.localeCompare(destB);
 });
+
+export const dateFromItalianTime = (h: number, m: number, s: number): Date => {
+    const a = new Date();
+    a.setUTCHours(12, 34, 56, 0);
+    var b = a.toLocaleString("en-US", { timeZone: "Europe/Rome", timeZoneName: "short", hour12: false });
+    b = b.replace(/[\d]+:34:56/gm, `${h}:${m}:${s}`)
+    return new Date(b);
+}

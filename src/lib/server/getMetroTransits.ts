@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { toTitleCase } from "$lib/utils/utils"
+import { dateFromItalianTime, toTitleCase } from "$lib/utils/utils"
 
 export default async function (station: StationInfo): Promise<Array<Transit>> {
     const now = new Date();
@@ -48,11 +48,9 @@ function getForecastFromDelay(spacedDepartureTimes: string, delayInSecond: numbe
     let forecasts: Array<Date> = [];
 
     for (let i = 0; i < departureTimes.length && forecastsLimit > 0; i++) {
-        const rawTime = new Date();
-        rawTime.setHours(
+        const rawTime = dateFromItalianTime(
             Number(departureTimes[i].substring(0, 2)),
             Number(departureTimes[i].substring(3, 5)),
-            0,
             0
         )
 

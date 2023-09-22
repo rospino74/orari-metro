@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { toTitleCase } from "$lib/utils/utils"
+import { dateFromItalianTime, toTitleCase } from "$lib/utils/utils"
 
 export default async function (stop: BusStop): Promise<Array<Transit>> {
     let code;
@@ -35,12 +35,10 @@ export default async function (stop: BusStop): Promise<Array<Transit>> {
         const departure = el.children("previsionepartenza").text() === "true";
         const time = el.children("oraarrivo").text();
 
-        const rawTime = new Date();
-        rawTime.setHours(
+        const rawTime = dateFromItalianTime(
             Number(time.substring(0, 2)),
             Number(time.substring(3, 5)),
-            Number(time.substring(6, 8)),
-            0
+            Number(time.substring(6, 8))
         )
 
         // Inserisco i dati
