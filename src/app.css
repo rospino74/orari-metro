@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* @layer components {
-    .typography-important {
-      @apply ;
-    }
-  } 
-} */
-
 html, body {
     @apply box-border m-0 p-0 w-full h-full dark:bg-black dark:text-white;
 }

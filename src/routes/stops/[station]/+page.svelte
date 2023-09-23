@@ -64,7 +64,7 @@
 
 <style>
     main {
-        @apply h-full flex flex-col;
+        @apply h-full;
     }
 
     .header {
@@ -72,7 +72,7 @@
     }
 
     .content {
-        @apply h-full p-16 flex flex-col gap-4;
+        @apply h-[calc(100%-theme(space.24)*2)] px-16 py-8 flex flex-col gap-4;
     }
 
     .footer {
