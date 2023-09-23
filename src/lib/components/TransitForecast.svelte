@@ -31,7 +31,7 @@
     </span>
     <ScrollOverflow class="dest">{transit.dest}</ScrollOverflow>
     <ul>
-        {#each padEndArray(3, "    ", forecasts) as fc}
+        {#each padEndArray(3, "", forecasts) as fc}
             <li>{fc}</li>
         {/each}
     </ul>

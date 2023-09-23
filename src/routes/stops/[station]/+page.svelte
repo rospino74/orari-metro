@@ -6,8 +6,30 @@
     import Spacer from "$lib/components/Spacer.svelte";
     import MessageBanner from "$lib/components/MessageBanner.svelte";
     import ScrollOverflow from "$lib/components/ScrollOverflow.svelte";
+    import { invalidateAll } from "$app/navigation";
+    import { onMount } from "svelte";
 
     export let data: PageData;
+
+    onMount(() => {
+        const now = new Date();
+        let secondsRemaining = 60 - now.getSeconds();
+
+        // Per ottimizzare le richieste se i secondi rimanenti sono pochi non aggiorno la pagina
+        if (secondsRemaining < 15) secondsRemaining += 60;
+
+        let interval: number;
+        const timeout = setTimeout(() => {
+            interval = setInterval(() => {
+                invalidateAll();
+            }, 60 * 1000); // Ogni Minuto
+        }, secondsRemaining * 1000);
+
+        return () => {
+            clearTimeout(timeout);
+            clearInterval(interval);
+        };
+    });
 </script>
 
 <main>
