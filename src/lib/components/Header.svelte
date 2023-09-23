@@ -19,7 +19,7 @@
         }, 1000);
 
         return () => {
-            clearInterval(interval)
+            clearInterval(interval);
         };
     });
 </script>
@@ -51,6 +51,6 @@
     }
 
     h1 {
-        @apply text-4xl font-medium;
+        @apply text-5xl font-medium;
     }
 </style>
