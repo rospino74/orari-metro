@@ -6,21 +6,26 @@
     export let transit: Transit, shield: Color;
 
     $: shieldTextColor = getCorrectTextColor(shield);
-    $: forecasts = transit.forecasts.map((fc: Date) => {
-        const now = new Date().getTime();
-        const minuteDifference = Math.floor((fc.getTime() - now) / 60000);
+    $: forecasts = transit.forecasts
+        .map((fc: Date) => {
+            const now = new Date().getTime();
+            const minuteDifference = Math.floor((fc.getTime() - now) / 60000);
 
-        if (minuteDifference < 1) {
-            return transit.departure ? "Partenza" : "Arrivo";
-        }
+            if (minuteDifference < 1) {
+                return transit.departure ? "Partenza" : "Arrivo";
+            }
 
-        return `${minuteDifference} min`;
-    }).slice(0, 3);
+            return `${minuteDifference} min`;
+        })
+        .slice(0, 3);
 </script>
 
 <div>
     <span>
-        <p style="--shield-color: {shield}; --text-color: {shieldTextColor};" class:branch={transit.branch}>
+        <p
+            style="--shield-color: {shield}; --text-color: {shieldTextColor};"
+            class:branch={transit.branch}
+        >
             {transit.line.replace("/", "")}
         </p>
     </span>
@@ -44,7 +49,13 @@
     }
 
     p:global(.branch) {
-        background: linear-gradient(-45deg, var(--shield-color) 45%, rgba(255,255,255,0.2) 45%, rgba(255,255,255,0.2) 55%, var(--shield-color) 55%);
+        background: linear-gradient(
+            -45deg,
+            var(--shield-color) 45%,
+            rgba(255, 255, 255, 0.2) 45%,
+            rgba(255, 255, 255, 0.2) 55%,
+            var(--shield-color) 55%
+        );
     }
 
     :global(.dest) {
@@ -53,14 +64,14 @@
     }
 
     ul {
-        @apply flex h-full items-center list-none gap-16 justify-end grow;
+        @apply w-4/12 h-full list-none grid grid-cols-3 gap-16;
     }
 
     li {
-        @apply float-left font-light text-3xl text-neutral-700 text-center;
+        @apply font-light text-3xl text-neutral-700 flex items-center justify-end;
     }
 
     li:first-child {
-        @apply font-normal text-4xl text-white text-left;
+        @apply font-normal text-4xl text-white;
     }
 </style>
