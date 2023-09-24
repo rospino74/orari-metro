@@ -16,7 +16,7 @@ declare global {
 		name: string,
 		weather: Weather,
 		temperature: number,
-		warnigs?: Array<string>,
+		warnings?: Array<string>,
 		info?: Array<string>,
 		metroTransits: Array<Transit>,
 		busTransits?: Array<Transit>,

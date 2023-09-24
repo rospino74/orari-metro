@@ -9,6 +9,9 @@
     import { invalidateAll } from "$app/navigation";
     import { onMount } from "svelte";
 
+    import { slide } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
+
     export let data: PageData;
 
     onMount(() => {
@@ -33,9 +36,8 @@
 </script>
 
 <svelte:head>
-    <title>Transiti a {data.name}</title> 
+    <title>Transiti a {data.name}</title>
 </svelte:head>
-
 
 <main>
     <div class="header">
@@ -56,15 +58,29 @@
             </ScrollOverflow>
         {/if}
     </div>
-    <div class="footer">
-        <MessageBanner
-            type="warn"
-            messages={[
-                "Causa lavori i treni diretti a Brignole terminano a Caricamento",
-                "Ascensori non funzionati a Sarzano Sant'Agostino",
-            ]}
-        />
-    </div>
+    {#if data.warnings && data.warnings.length > 0}
+        <div
+            class="footer"
+            transition:slide={{
+                duration: 1000,
+                easing: quintOut,
+                axis: "y",
+            }}
+        >
+            <MessageBanner type="warn" messages={data.warnings} />
+        </div>
+    {:else if data.info && data.info.length > 0}
+        <div
+            class="footer"
+            transition:slide={{
+                duration: 1000,
+                easing: quintOut,
+                axis: "y",
+            }}
+        >
+            <MessageBanner type="info" messages={data.info} />
+        </div>
+    {/if}
 </main>
 
 <style>
@@ -77,10 +93,10 @@
     }
 
     .content {
-        @apply h-[calc(100%-theme(space.24)*2)] px-16 py-8 flex flex-col gap-4;
+        @apply h-[calc(100%-theme(space.24))] px-16 py-8 flex flex-col gap-4;
     }
 
     .footer {
-        @apply h-24 bg-yellow-400;
+        @apply h-24 w-full bg-yellow-400 absolute bottom-0 left-0;
     }
 </style>
