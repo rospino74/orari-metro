@@ -32,6 +32,11 @@
     });
 </script>
 
+<svelte:head>
+    <title>Transiti a {data.name}</title> 
+</svelte:head>
+
+
 <main>
     <div class="header">
         <Header stationName={data.name} />

@@ -3,6 +3,10 @@
     export let data: PageData;
 </script>
 
+<svelte:head>
+    <title>Selezione Stazione</title> 
+</svelte:head>
+
 <h1>Scegli una stazione da vedere:</h1>
 <ul>
     {#each data.pageRoutes as { name, url }}
