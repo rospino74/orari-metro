@@ -57,7 +57,7 @@ export default {
         disc: { delay: 450, terminus: false, dest: "Brin (Certosa)" },
         asc: { delay: 450, terminus: false, dest: "Brignole" },
         nearBusStops: [
-            207
+            207, 170, 1, 4101
         ],
     },
     sarzano: {
