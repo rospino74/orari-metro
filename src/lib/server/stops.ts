@@ -78,7 +78,19 @@ export default {
         disc: { delay: 0, terminus: true, dest: "Brin (Certosa)" },
         asc: { delay: 900, terminus: false, dest: "Brignole" },
         nearBusStops: [
-            416, 1441, 439, 360, 116, 2353, 153, {
+            416, 1441, {
+                id: 439,
+                exclude: [
+                    49
+                ]
+            }, {
+                id: 360,
+                exclude: [
+                    43, 31, "31/"
+                ]
+            },
+            116, 2353, 153,
+            {
                 id: 293,
                 exclude: [
                     43, 47, 49, 16
