@@ -1,6 +1,14 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-    import { weather, temperature } from "$lib/stores/weather";
+    import { onMount, type ComponentType } from "svelte";
+    // Weather Icons
+    import CloudyDay from "~icons/material-symbols/partly-cloudy-day-outline-rounded";
+    import CloudyNight from "~icons/material-symbols/nights-stay-outline-rounded";
+    import ClearDay from "~icons/material-symbols/sunny-outline-rounded";
+    import ClearNight from "virtual:icons/material-symbols/bedtime-outline-rounded";
+    import Rainy from "virtual:icons/material-symbols/rainy-outline";
+    import Snowy from "virtual:icons/material-symbols/ac-unit-rounded";
+
+    // Company logo
     import LogoAMT from "virtual:icons/custom/amt";
 
     // Props
@@ -22,6 +30,27 @@
             clearInterval(interval);
         };
     });
+
+    export let weather: Weather;
+
+    // Prendo l'ora corrente
+    $: isNight = dateObj.getHours() > 19 && dateObj.getHours() < 6;
+
+    let weatherIcon: ComponentType;
+    $: switch (weather.condition) {
+        case "snowy":
+            weatherIcon = Snowy;
+            break;
+        case "rainy":
+            weatherIcon = Rainy;
+            break;
+        case "clear":
+            weatherIcon = isNight ? ClearNight : ClearDay;
+            break;
+        case "cloudy":
+            weatherIcon = isNight ? CloudyNight : CloudyDay;
+            break;
+    }
 </script>
 
 <header>
@@ -31,8 +60,13 @@
     </div>
     <h1>{stationName}</h1>
     <div>
-        <p>{$temperature} °C</p>
-        <svelte:component this={$weather} class="h-9 w-9" width="" height="" />
+        <p>{weather.temperature} °C</p>
+        <svelte:component
+            this={weatherIcon}
+            class="h-9 w-9"
+            width=""
+            height=""
+        />
     </div>
 </header>
 

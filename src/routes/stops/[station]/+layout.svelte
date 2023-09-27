@@ -7,12 +7,13 @@
     import { quintOut } from "svelte/easing";
 
     export let data: LayoutData;
-    const {name, messages} = data;
+    const { name, messages, weather } = data;
+
 </script>
 
 <main>
     <div class="header">
-        <Header stationName={name} />
+        <Header stationName={name} weather={weather} />
     </div>
     <div class="content">
         <slot />
