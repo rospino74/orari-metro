@@ -22,17 +22,23 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	// Prendo info transiti metro
-	out.metroTransits = await getMetroTransits(station);
+	const metroTransitsPromise = getMetroTransits(station).then(transits => {
+    out.metroTransits = sortTransits(transits);
+  });
 
 	// Itero fermate collegate
+  let busTransitsPromises = [];
 	for (const bs of station.nearBusStops ?? [])
-		out.busTransits!.push(
-			...(await getBusTransits(bs))
-		);
+	  busTransitsPromises.push(
+     getBusTransits(bs).then(transits => out.busTransits!.push(...transits))
+    );
 
-	// E ordino i transiti
-	out.busTransits = sortTransits(out.busTransits!);
-	out.metroTransits = sortTransits(out.metroTransits);
+  // Aspetto fine caricamento bus e ordino i transiti
+  await Promise.all(busTransitsPromises);
+  out.busTransits = sortTransits(out.busTransits!);
+
+  // Aspetto fine caricamento transiti metro
+  await metroTransitsPromise;
 
 	return out;
 };
