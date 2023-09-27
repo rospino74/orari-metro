@@ -1,11 +1,11 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import getMetroTransits from "$lib/server/getMetroTransits"
-import getBusTransits from "$lib/server/getBusTransits"
 import stops from "$lib/server/stops"
 import { sortTransits } from '$lib/utils/utils';
+import { serializeBusStopsAsParam } from '$lib/utils/serialize';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, fetch }) => {
 	const stopID = params.station;
 	const station = stops[stopID];
 
@@ -23,22 +23,16 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	// Prendo info transiti metro
 	const metroTransitsPromise = getMetroTransits(station).then(transits => {
-    out.metroTransits = sortTransits(transits);
-  });
+		out.metroTransits = sortTransits(transits);
+	});
 
 	// Itero fermate collegate
-  let busTransitsPromises = [];
-	for (const bs of station.nearBusStops ?? [])
-	  busTransitsPromises.push(
-     getBusTransits(bs).then(transits => out.busTransits!.push(...transits))
-    );
+	if (station.nearBusStops && station.nearBusStops.length > 0) {
+		out.busTransits = await fetch(`/api/bus/${encodeURIComponent(serializeBusStopsAsParam(station.nearBusStops))}`).then(r => r.json());
+	}
 
-  // Aspetto fine caricamento bus e ordino i transiti
-  await Promise.all(busTransitsPromises);
-  out.busTransits = sortTransits(out.busTransits!);
-
-  // Aspetto fine caricamento transiti metro
-  await metroTransitsPromise;
-
+	// Aspetto fine caricamento transiti metro
+	await metroTransitsPromise;
 	return out;
 };
+
