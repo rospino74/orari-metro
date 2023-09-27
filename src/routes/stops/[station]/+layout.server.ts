@@ -15,8 +15,7 @@ export const load: LayoutServerLoad = async ({ params, fetch, depends }) => {
 
     let status: StationStatus = {
         name: station.name,
-        weather: 'cloudy',
-        temperature: 23,
+        weather: {},
     };
 
     // Prendo messaggi

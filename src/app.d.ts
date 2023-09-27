@@ -12,6 +12,11 @@ declare global {
 		nearBusStops?: Array<BusStop>,
 	}
 
+	interface Weather {
+		condition: 'cloudy' | 'clear' | 'rainy' | 'snowy',
+		temperature: number,
+	}
+
 	interface ServiceMessages {
 		warnings: Array<string>,
 		info: Array<string>,
@@ -20,7 +25,6 @@ declare global {
 	interface StationStatus {
 		name: string,
 		weather: Weather,
-		temperature: number,
 		messages?: ServiceMessages,
 	}
 
@@ -42,8 +46,6 @@ declare global {
 	type HSLColor = `hsl(${number}, ${number}%, ${number}%)`;
 	type HEXColor = `#${string}`;
 	type Color = RGBColor | RGBAColor | HSLColor | HEXColor;
-
-	type Weather = 'cloudy' | 'clear' | 'rainy' | 'snowy';
 }
 
 
