@@ -14,10 +14,7 @@ export const load: PageServerLoad = async ({ params, fetch, depends }) => {
 		throw error(400, 'Station name not valid!');
 	}
 
-	let out: StationData = {
-		name: station.name,
-		weather: 'cloudy',
-		temperature: 20,
+	let out: StationTransits = {
 		busTransits: [],
 		metroTransits: [],
 	}
