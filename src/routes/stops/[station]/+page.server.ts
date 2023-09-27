@@ -1,38 +1,38 @@
-import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import getMetroTransits from "$lib/server/getMetroTransits"
-import getBusTransits from "$lib/server/getBusTransits"
-import stops from "$lib/server/stops"
-import { sortTransits } from '$lib/utils/utils';
+import { error } from '@sveltejs/kit';
+import stops from "$lib/server/stops";
+import { serializeBusStopsAsParam } from '$lib/utils/serialize';
 
-export const load: PageServerLoad = async ({ params }) => {
-	const stopID = params.station;
-	const station = stops[stopID];
+export const load: PageServerLoad = async ({ params, fetch, depends }) => {
+	const stationID = params.station;
+	const station = stops[stationID];
+
+	// Utilizzato in invalidate
+	depends('custom:transits');
 
 	if (!station) {
 		throw error(400, 'Station name not valid!');
 	}
 
-	let out: StationData = {
-		name: station.name,
-		weather: 'cloudy',
-		temperature: 20,
+	let out: StationTransits = {
 		busTransits: [],
 		metroTransits: [],
 	}
 
 	// Prendo info transiti metro
-	out.metroTransits = await getMetroTransits(station);
+	const metroTransitsPromise = fetch(`/api/metro/${stationID}`)
+		.then(r => r.json())
+		.then(transits => {
+			out.metroTransits = transits;
+		});
 
 	// Itero fermate collegate
-	for (const bs of station.nearBusStops ?? [])
-		out.busTransits!.push(
-			...(await getBusTransits(bs))
-		);
+	if (station.nearBusStops && station.nearBusStops.length > 0) {
+		out.busTransits = await fetch(`/api/bus/${encodeURIComponent(serializeBusStopsAsParam(station.nearBusStops))}`).then(r => r.json());
+	}
 
-	// E ordino i transiti
-	out.busTransits = sortTransits(out.busTransits!);
-	out.metroTransits = sortTransits(out.metroTransits);
-
+	// Aspetto fine caricamento transiti metro
+	await metroTransitsPromise;
 	return out;
 };
+
