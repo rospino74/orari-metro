@@ -8,6 +8,9 @@
     $: shieldTextColor = getCorrectTextColor(shield);
     $: forecasts = transit.forecasts
         .map((fc: Date) => {
+            // https://stackoverflow.com/a/52931503
+            fc = new Date(fc);
+
             const now = new Date().getTime();
             const minuteDifference = Math.floor((fc.getTime() - now) / 60000);
 
