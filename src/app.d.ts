@@ -12,12 +12,16 @@ declare global {
 		nearBusStops?: Array<BusStop>,
 	}
 
+	interface ServiceMessages {
+		warnings: Array<string>,
+		info: Array<string>,
+	}
+
 	interface StationStatus {
 		name: string,
 		weather: Weather,
 		temperature: number,
-		warnings?: Array<string>,
-		info?: Array<string>,
+		messages?: ServiceMessages,
 	}
 
 	interface StationTransits {
