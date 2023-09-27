@@ -1,13 +1,11 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import getMetroTransits from "$lib/server/getMetroTransits"
 import stops from "$lib/server/stops"
-import { sortTransits } from '$lib/utils/utils';
 import { serializeBusStopsAsParam } from '$lib/utils/serialize';
 
 export const load: PageServerLoad = async ({ params, fetch }) => {
-	const stopID = params.station;
-	const station = stops[stopID];
+	const stationID = params.station;
+	const station = stops[stationID];
 
 	if (!station) {
 		throw error(400, 'Station name not valid!');
@@ -22,9 +20,11 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	}
 
 	// Prendo info transiti metro
-	const metroTransitsPromise = getMetroTransits(station).then(transits => {
-		out.metroTransits = sortTransits(transits);
-	});
+	const metroTransitsPromise = fetch(`/api/metro/${stationID}`)
+		.then(r => r.json())
+		.then(transits => {
+			out.metroTransits = transits;
+		});
 
 	// Itero fermate collegate
 	if (station.nearBusStops && station.nearBusStops.length > 0) {
