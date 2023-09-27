@@ -6,7 +6,7 @@
     import Spacer from "$lib/components/Spacer.svelte";
     import MessageBanner from "$lib/components/MessageBanner.svelte";
     import ScrollOverflow from "$lib/components/ScrollOverflow.svelte";
-    import { invalidateAll } from "$app/navigation";
+    import { invalidate } from "$app/navigation";
     import { onMount } from "svelte";
 
     import { slide } from "svelte/transition";
@@ -24,7 +24,7 @@
         let interval: number;
         const timeout = setTimeout(() => {
             interval = setInterval(() => {
-                invalidateAll();
+                invalidate('custom:transits');
             }, 60 * 1000); // Ogni Minuto
         }, secondsRemaining * 1000);
 

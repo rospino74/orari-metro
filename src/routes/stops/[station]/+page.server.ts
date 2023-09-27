@@ -3,9 +3,12 @@ import type { PageServerLoad } from './$types';
 import stops from "$lib/server/stops"
 import { serializeBusStopsAsParam } from '$lib/utils/serialize';
 
-export const load: PageServerLoad = async ({ params, fetch }) => {
+export const load: PageServerLoad = async ({ params, fetch, depends }) => {
 	const stationID = params.station;
 	const station = stops[stationID];
+
+	// Utilizzato in invalidate
+	depends('custom:transits');
 
 	if (!station) {
 		throw error(400, 'Station name not valid!');
