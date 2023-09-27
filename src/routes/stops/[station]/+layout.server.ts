@@ -19,5 +19,11 @@ export const load: LayoutServerLoad = async ({ params, fetch, depends }) => {
         temperature: 23,
     };
 
+    // Prendo messaggi
+    const messagesPromise = fetch('/api/metro/messages').then(r => r.json()).then(m => status.messages = m);
+
+    // Attendo la fine di tutti i caricamenti
+    await Promise.all([messagesPromise]);
+
     return status;
 };
