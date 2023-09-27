@@ -34,7 +34,7 @@
     export let weather: Weather;
 
     // Prendo l'ora corrente
-    $: isNight = dateObj.getHours() > 19 && dateObj.getHours() < 6;
+    $: isNight = dateObj.getHours() > 19 || dateObj.getHours() < 6;
 
     let weatherIcon: ComponentType;
     $: switch (weather.condition) {
