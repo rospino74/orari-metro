@@ -20,9 +20,10 @@ export const load: LayoutServerLoad = async ({ params, fetch, depends }) => {
 
     // Prendo messaggi
     const messagesPromise = fetch('/api/metro/messages').then(r => r.json()).then(m => status.messages = m);
+    const weatherPromise = fetch('/api/metro/weather').then(r => r.json()).then(w => status.weather = w);
 
     // Attendo la fine di tutti i caricamenti
-    await Promise.all([messagesPromise]);
+    await Promise.all([messagesPromise, weatherPromise]);
 
     return status;
 };
