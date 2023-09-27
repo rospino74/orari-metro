@@ -5,9 +5,25 @@
     import MessageBanner from "$lib/components/MessageBanner.svelte";
     import { slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
+    import { invalidate } from "$app/navigation";
+    import { onMount } from "svelte";
 
     export let data: LayoutData;
     const { name, messages, weather } = data;
+
+    onMount(() => {
+        const updateWeatherInterval = setInterval(() => {
+            invalidate('/api/metro/weather');
+        }, 3600000); // Ogni ora
+        const updateMessagesInterval = setInterval(() => {
+            invalidate('/api/metro/messages');
+        }, 1800000); // Ogni mezz'ora
+
+        return () => {
+            clearInterval(updateWeatherInterval);
+            clearInterval(updateMessagesInterval);
+        };
+    });
 
 </script>
 
