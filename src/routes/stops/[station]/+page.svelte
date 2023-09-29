@@ -41,7 +41,7 @@
     <Spacer>
         <h2>Collegamenti con Bus</h2>
     </Spacer>
-    <ScrollOverflow direction="y" speedPercentagePerSecond={10}>
+    <ScrollOverflow direction="y" speedPercentagePerSecond={25}>
         {#each data.busTransits as t}
             <TransitForecast transit={t} shield="#0f8a24" />
         {/each}
