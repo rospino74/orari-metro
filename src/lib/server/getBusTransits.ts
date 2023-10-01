@@ -62,7 +62,7 @@ export default async function (stop: BusStop): Promise<Array<Transit>> {
 
 const getShieldColorFromLine = (line: string): Color => {
     const isValpolcevera = (l: number) => (l >= 270 && l <= 277) || [7, 8, 57, 63, 65, 74].includes(l)
-    const isValbisagno = (l: number) => (l >= 46 && l <= 49) || (l >= 381 && l <= 482) || [13, 14, 34, 37, 356].includes(l)
+    const isValbisagno = (l: number) => (l >= 46 && l <= 49) || (l >= 381 && l <= 482) || [13, 14, 34, 37, 82, 84, 356].includes(l)
     const isPonente = (l: number) => (l >= 93 && l <= 199) || [1, 3, 5, 6, 18, 20, 51, 52, 53, 59, 62, 66, 71].includes(l)
     const isLevante = (l: number) => (l >= 42 && l <= 45) || (l >= 85 && l <= 88) || (l >= 512 && l <= 584) || [15, 16, 17, 31, 36].includes(l)
     const isCentro = (l: number) => [10, 32, 35, 38, 39, 40, 54, 64, 340, 374, 375, 377].includes(l)
