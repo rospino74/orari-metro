@@ -15,9 +15,10 @@ export const getCorrectTextColor = (c: Color, dark: Color = "#000000", light: Co
         [r, g, b] = numbers;
     } else if (isHSL(c)) {
         return getCorrectTextColor(
-            hslToRgb(c), dark, light
+            hslToHEX(c), dark, light
         );
     }
+
 
     // Tutti i casi sono stati analizzati
     // @ts-expect-error
@@ -41,28 +42,17 @@ function isHSL(c: Color): c is HSLColor {
     return c.toLowerCase().startsWith("hsl(");
 }
 
-function hslToRgb(c: HSLColor): RGBColor {
-    let r, g, b;
+// https://stackoverflow.com/a/44134328
+function hslToHEX(c: HSLColor): HEXColor {
     const [h, s, l] = c.slice(4, -1).split(",").map((i) => Number(i.replace('%', '')));
 
-    const hueToRgb = (p: number, q: number, t: number) => {
-        if (t < 0) t += 1;
-        if (t > 1) t -= 1;
-        if (t < 1 / 6) return p + (q - p) * 6 * t;
-        if (t < 1 / 2) return q;
-        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-        return p;
-    }
+    const L = l / 100;
+    const a = s * Math.min(L, 1 - L) / 100;
+    const f = (n: number) => {
+        const k = (n + h / 30) % 12;
+        const color = L - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+        return Math.round(255 * color).toString(16).padStart(2, '0');   // convert to Hex and prefix "0" if needed
+    };
 
-    if (s === 0) {
-        r = g = b = l; // achromatic
-    } else {
-        const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-        const p = 2 * l - q;
-        r = hueToRgb(p, q, h + 1 / 3);
-        g = hueToRgb(p, q, h);
-        b = hueToRgb(p, q, h - 1 / 3);
-    }
-
-    return `rgb(${Math.round(r * 255)}, ${Math.round(g * 255)}, ${Math.round(b * 255)})`;
+    return `#${f(0)}${f(8)}${f(4)}`;
 }
