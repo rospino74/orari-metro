@@ -5,6 +5,12 @@ declare global {
 
 	type BusStop = number | { id: number, exclude: Array<string> }
 
+	type RGBColor = `rgb(${number}, ${number}, ${number})`;
+	type RGBAColor = `rgba(${number}, ${number}, ${number}, ${number})`;
+	type HSLColor = `hsl(${number}, ${number}%, ${number}%)`;
+	type HEXColor = `#${string}`;
+	type Color = RGBColor | RGBAColor | HSLColor | HEXColor;
+
 	interface StationInfo {
 		name: string,
 		asc: { delay: number, terminus: bool, dest: string },
@@ -36,16 +42,11 @@ declare global {
 	interface Transit {
 		line: string,
 		branch: boolean,
+		shield: Color,
 		dest: string,
 		departure: boolean,
 		forecasts: Array<Date>
 	}
-
-	type RGBColor = `rgb(${number}, ${number}, ${number})`;
-	type RGBAColor = `rgba(${number}, ${number}, ${number}, ${number})`;
-	type HSLColor = `hsl(${number}, ${number}%, ${number}%)`;
-	type HEXColor = `#${string}`;
-	type Color = RGBColor | RGBAColor | HSLColor | HEXColor;
 }
 
 

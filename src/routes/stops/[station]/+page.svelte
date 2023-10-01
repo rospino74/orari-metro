@@ -35,7 +35,7 @@
 </svelte:head>
 
 {#each data.metroTransits as t}
-    <TransitForecast transit={t} shield="#e84330" />
+    <TransitForecast transit={t} />
 {/each}
 {#if data.busTransits && data.busTransits.length > 0}
     <Spacer>
@@ -43,7 +43,7 @@
     </Spacer>
     <ScrollOverflow direction="y" speedPercentagePerSecond={25}>
         {#each data.busTransits as t}
-            <TransitForecast transit={t} shield="#0f8a24" />
+            <TransitForecast transit={t} />
         {/each}
     </ScrollOverflow>
 {/if}

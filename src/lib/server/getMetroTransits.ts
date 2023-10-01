@@ -18,6 +18,7 @@ export default async function (station: StationInfo): Promise<Array<Transit>> {
     // Costruisco i transiti per senso di marcia
     const asc: Transit = {
         line: 'M',
+        shield: '#e84330',
         branch: false,
         departure: station.asc.terminus,
         dest: toTitleCase(station.asc.dest),
@@ -29,6 +30,7 @@ export default async function (station: StationInfo): Promise<Array<Transit>> {
 
     const disc: Transit = {
         line: 'M',
+        shield: '#e84330',
         branch: false,
         departure: station.disc.terminus,
         dest: toTitleCase(station.disc.dest),

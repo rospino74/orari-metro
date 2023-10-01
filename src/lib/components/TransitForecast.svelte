@@ -3,9 +3,9 @@
     import { getCorrectTextColor } from "$lib/utils/colors";
     import { padEndArray } from "$lib/utils/utils";
 
-    export let transit: Transit, shield: Color;
+    export let transit: Transit;
 
-    $: shieldTextColor = getCorrectTextColor(shield);
+    $: shieldTextColor = getCorrectTextColor(transit.shield);
     $: forecasts = transit.forecasts
         .map((fc: Date) => {
             // https://stackoverflow.com/a/52931503
@@ -26,7 +26,7 @@
 <div>
     <span>
         <p
-            style="--shield-color: {shield}; --text-color: {shieldTextColor};"
+            style="--shield-color: {transit.shield}; --text-color: {shieldTextColor};"
             class:branch={transit.branch}
         >
             {transit.line.replace("/", "")}
