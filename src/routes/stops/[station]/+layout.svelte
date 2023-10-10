@@ -17,7 +17,7 @@
         }, 3600000); // Ogni ora
         const updateMessagesInterval = setInterval(() => {
             invalidate('/api/metro/messages');
-        }, 1800000); // Ogni mezz'ora
+        }, 600000); // Ogni 10 minuti
 
         return () => {
             clearInterval(updateWeatherInterval);
