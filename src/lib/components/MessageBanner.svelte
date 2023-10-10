@@ -13,7 +13,7 @@
         this={type === "warn" ? WarningIcon : InfoIcon}
         height=""
         width=""
-        class="icon h-9 self-center"
+        class="icon"
     />
     <ScrollOverflow continuos={false}>
             {#each messages as msg}
@@ -36,7 +36,7 @@
     }
 
     :global(.icon) {
-        @apply h-9 w-9 self-center;
+        @apply w-[90px] self-center;
     }
 
     span {
