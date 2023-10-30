@@ -200,12 +200,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/material-symbols@npm:^1.1.60":
-  version: 1.1.60
-  resolution: "@iconify-json/material-symbols@npm:1.1.60"
+"@iconify-json/material-symbols@npm:^1.1.61":
+  version: 1.1.61
+  resolution: "@iconify-json/material-symbols@npm:1.1.61"
   dependencies:
     "@iconify/types": "*"
-  checksum: fa972de2c79b9d3d3910463e8017848f0cf8450c36d3e2faa105700a2f26a653941379e663477080eb44771175d9561233fb6e451b52f099da4ed93c15fe67bf
+  checksum: d348f0288f9f697efb8f6f601bafe5643ff3db03978b2a79ea36ba36dbed050dd4c9fa8511f0f9272853d12522469b45d41196bcb37baf8c4639495345c1b3b3
   languageName: node
   linkType: hard
 
@@ -1783,7 +1783,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "metro-orari@workspace:."
   dependencies:
-    "@iconify-json/material-symbols": ^1.1.60
+    "@iconify-json/material-symbols": ^1.1.61
     "@sveltejs/adapter-auto": ^2.0.0
     "@sveltejs/kit": ^1.27.0
     autoprefixer: ^10.4.16
