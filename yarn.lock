@@ -1794,7 +1794,7 @@ __metadata:
     tailwindcss: ^3.3.5
     tslib: ^2.4.1
     typescript: ^5.0.0
-    unplugin-icons: ^0.17.1
+    unplugin-icons: ^0.17.3
     vite: ^4.5.0
   languageName: unknown
   linkType: soft
@@ -3018,9 +3018,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^0.17.1":
-  version: 0.17.1
-  resolution: "unplugin-icons@npm:0.17.1"
+"unplugin-icons@npm:^0.17.3":
+  version: 0.17.3
+  resolution: "unplugin-icons@npm:0.17.3"
   dependencies:
     "@antfu/install-pkg": ^0.1.1
     "@antfu/utils": ^0.7.6
@@ -3046,7 +3046,7 @@ __metadata:
       optional: true
     vue-template-es2015-compiler:
       optional: true
-  checksum: 594f9aadc2ec7247474de2747faa0fad6c565210c1d848a4dcfce785c0403d1ebdf4ec907f8ab443d9ab40bf04dff99ac9a88f7e51262138a6ae0f891339c712
+  checksum: 0a62e03464c288d8bc711fa2d5062afe470f9390e78b3d9615bf7e9246833550d96f54809e118406a8d9e83b2571327c44ceff777108ebd959c185d899f78183
   languageName: node
   linkType: hard
 
