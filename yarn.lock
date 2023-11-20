@@ -347,9 +347,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^1.27.5":
-  version: 1.27.5
-  resolution: "@sveltejs/kit@npm:1.27.5"
+"@sveltejs/kit@npm:^1.27.6":
+  version: 1.27.6
+  resolution: "@sveltejs/kit@npm:1.27.6"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^2.5.0
     "@types/cookie": ^0.5.1
@@ -369,7 +369,7 @@ __metadata:
     vite: ^4.0.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: b152f444b318a80d4366986b3aaa5b52bf740efdf88838ad3941c562fc1fbd716b26f863ba7b4e754093edef4ed002ee1cc81fc6d9d67c7abf3892d6b94c9b94
+  checksum: 6c2ed98f15da0fc837fc00ff7d76929ebf600c0031a6e5341cb5d6cd8a310b83a30bb0268e6a67268e833f2ecdc5accd3b8ab950a6382b679d3d660759de20b8
   languageName: node
   linkType: hard
 
@@ -1785,7 +1785,7 @@ __metadata:
   dependencies:
     "@iconify-json/material-symbols": ^1.1.62
     "@sveltejs/adapter-auto": ^2.1.1
-    "@sveltejs/kit": ^1.27.5
+    "@sveltejs/kit": ^1.27.6
     autoprefixer: ^10.4.16
     cheerio: ^1.0.0-rc.12
     postcss: ^8.4.31
