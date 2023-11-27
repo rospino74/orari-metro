@@ -13,7 +13,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@iconify-json/material-symbols": "^1.1.63",
+		"@iconify-json/material-symbols": "^1.1.64",
 		"@sveltejs/adapter-auto": "^2.1.1",
 		"@sveltejs/kit": "^1.27.6",
 		"autoprefixer": "^10.4.16",
