@@ -1879,7 +1879,7 @@ __metadata:
     tslib: ^2.4.1
     typescript: ^5.3.2
     unplugin-icons: ^0.17.4
-    vite: ^5.0.2
+    vite: ^5.0.5
   languageName: unknown
   linkType: soft
 
@@ -3243,13 +3243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "vite@npm:5.0.2"
+"vite@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "vite@npm:5.0.5"
   dependencies:
     esbuild: ^0.19.3
     fsevents: ~2.3.3
-    postcss: ^8.4.31
+    postcss: ^8.4.32
     rollup: ^4.2.0
   peerDependencies:
     "@types/node": ^18.0.0 || >=20.0.0
@@ -3279,7 +3279,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 28784e10ae40f20afdafb81f09439800b2ba48b4e9f14720cb97a8bc47537369b91dc0d1ea955543dd5a443277d4af4718df9e95a9062276167c428fbc931566
+  checksum: 8df70302934de39ad6fda4f28246e07850f849c2bd197b7af93615f5f39955be460dd19940a46ec5bf2adf81bc32b60985eb5990142212754c733eba4fe3bfa3
   languageName: node
   linkType: hard
 
