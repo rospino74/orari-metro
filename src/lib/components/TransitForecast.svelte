@@ -67,11 +67,11 @@
     }
 
     ul {
-        @apply w-4/12 h-full list-none grid grid-cols-3 gap-16;
+        @apply h-full list-none grid grid-cols-3 gap-8;
     }
 
     li {
-        @apply font-light text-3xl text-neutral-700 flex items-center justify-end;
+        @apply font-light text-3xl text-neutral-700 flex items-center justify-end w-32;
     }
 
     li:first-child {
