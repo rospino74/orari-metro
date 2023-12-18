@@ -429,14 +429,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@sveltejs/adapter-auto@npm:2.1.1"
+"@sveltejs/adapter-auto@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@sveltejs/adapter-auto@npm:3.0.0"
   dependencies:
     import-meta-resolve: ^4.0.0
   peerDependencies:
-    "@sveltejs/kit": ^1.0.0
-  checksum: ab324951db0ae9f615c35267ba035f8ecec0f8dd9f2fa0bc0007ff0c63ee8f3bfa22e6b4dd98a4a875edfd9ed98abff7e1923aab63e36dbcf422a22e48c3019b
+    "@sveltejs/kit": ^2.0.0
+  checksum: 9694725b7f43efc575a1643403d6fb2edf1b222d74ad8660f3dee354ad8ab93c4bc4cbcf732ec57a6b0ff2aeae51f8a640bd65d525cd2c56e0504dbca8d5072c
   languageName: node
   linkType: hard
 
@@ -1924,7 +1924,7 @@ __metadata:
   resolution: "metro-orari@workspace:."
   dependencies:
     "@iconify-json/material-symbols": ^1.1.68
-    "@sveltejs/adapter-auto": ^2.1.1
+    "@sveltejs/adapter-auto": ^3.0.0
     "@sveltejs/kit": ^1.28.0
     autoprefixer: ^10.4.16
     cheerio: ^1.0.0-rc.12
