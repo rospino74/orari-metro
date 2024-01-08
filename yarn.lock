@@ -202,12 +202,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/material-symbols@npm:^1.1.68":
-  version: 1.1.68
-  resolution: "@iconify-json/material-symbols@npm:1.1.68"
+"@iconify-json/material-symbols@npm:^1.1.69":
+  version: 1.1.69
+  resolution: "@iconify-json/material-symbols@npm:1.1.69"
   dependencies:
     "@iconify/types": "*"
-  checksum: 6f5b8b6cd83d11f0ebc935690f6485ddb355944ef3766284378a7549a7d1ad4f343a83f3a003f7b7d121ae841cb67d3b32c002772f5bb943a925792197ca5148
+  checksum: 55fc2dec91303357d26d3b5783b35d1894ca3ca91b7b6e92cea709d55ddda2d53c8382e9a1c508fcf8650d12c9fb024d6a7e5e018bd33c62c74fd344b3242578
   languageName: node
   linkType: hard
 
@@ -1906,7 +1906,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "metro-orari@workspace:."
   dependencies:
-    "@iconify-json/material-symbols": ^1.1.68
+    "@iconify-json/material-symbols": ^1.1.69
     "@sveltejs/adapter-auto": ^3.1.0
     "@sveltejs/kit": ^2.0.6
     "@sveltejs/vite-plugin-svelte": ^3.0.1
