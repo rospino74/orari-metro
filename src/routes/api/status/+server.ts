@@ -24,7 +24,7 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
         date.setDate(Number(giorno));
 
         // Le linee possono essere sia un array che una stringa, trasformo in array
-        let affectedLines = linee;
+        let affectedLines = linee ?? [];
         if (!Array.isArray(affectedLines)) {
             affectedLines = [affectedLines];
         }
