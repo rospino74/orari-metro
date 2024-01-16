@@ -30,7 +30,7 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
         }
 
         // Per il messaggio rimuovi tutti i caratteri prima del primo : e fai maiuscolo dopo il punto e la prima lettera della frase
-        let message = messaggio.replace(/.*?:/, '').trim().replace(/\.\s*(\w)/g, (_, letter) => `.\n${letter.toUpperCase()}`);
+        let message = messaggio.replace(/.*?:/, '').trim().replace(/\.\s+([a-z])/g, (_, letter) => `. ${letter.toUpperCase()}`);
         message = message.charAt(0).toUpperCase() + message.slice(1);
 
         return {
