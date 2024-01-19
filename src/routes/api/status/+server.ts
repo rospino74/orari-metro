@@ -29,8 +29,8 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
             affectedLines = [affectedLines];
         }
 
-        // Tolgo "Ascensore" e "Funicolare" dal nome della linea visto che il tipo è già presente in affectedKind
-        affectedLines = affectedLines.map((linea) => linea.replace(/(Ascensore|Funicolare)\s+/, ''));
+        // Tolgo "Ascensore", "Funicolare" e "Cremagliera" dal nome della linea visto che il tipo è già presente in affectedKind
+        affectedLines = affectedLines.map((linea) => linea.replace(/(ascensore(?: di)?|funicolare|cremagliera)\s+/i, ''));
 
         // Per il messaggio rimuovi tutti i caratteri prima del primo : e fai maiuscolo dopo il punto e la prima lettera della frase
         let message = messaggio.replace(/.*?:/, '').trim().replace(/\.\s+([a-z])/g, (_, letter) => `. ${letter.toUpperCase()}`);
