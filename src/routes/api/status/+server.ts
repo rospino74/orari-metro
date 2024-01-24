@@ -47,7 +47,8 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
 
     // Cache valida per 30 minuti, sul server per 15 minuti e se c'è un errore per ulteriori 15 minuti
     setHeaders({
-        'Cache-Control': 'max-age=1800, s-maxage=900, stale-if-error=900, public'
+        'Cache-Control': 'max-age=1800, s-maxage=900, stale-if-error=900, public',
+        'Access-Control-Allow-Origin': '*',
     });
 
     return json(out);
