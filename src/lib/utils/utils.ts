@@ -38,10 +38,15 @@ export const sortTransits = (arr: Array<Transit>): Array<Transit> => arr.sort((a
     return destA.localeCompare(destB);
 });
 
-export const dateFromItalianTime = (h: number, m: number, s: number): Date => {
+export const dateFromItalianTime = (hour: number, minute: number, seconds: number = 0, day?: number, month?: number, year?: number): Date => {
     const a = new Date();
+
+    if (day) a.setDate(day);
+    if (month) a.setMonth(month - 1);
+    if (year) a.setFullYear(year);
+
     a.setUTCHours(12, 34, 56, 0);
     var b = a.toLocaleString("en-US", { timeZone: "Europe/Rome", timeZoneName: "short", hour12: false });
-    b = b.replace(/[\d]+:34:56/gm, `${h}:${m}:${s}`)
+    b = b.replace(/[\d]+:34:56/gm, `${hour}:${minute}:${seconds}`)
     return new Date(b);
 }
