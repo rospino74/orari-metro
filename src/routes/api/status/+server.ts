@@ -32,9 +32,28 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
         // Tolgo "Ascensore", "Funicolare" e "Cremagliera" dal nome della linea visto che il tipo è già presente in affectedKind
         affectedLines = affectedLines.map((linea) => linea.replace(/(ascensore(?: di)?|funicolare|cremagliera)\s+/i, ''));
 
-        // Per il messaggio rimuovi tutti i caratteri prima del primo : e fai maiuscolo dopo il punto e la prima lettera della frase
-        let message = messaggio.replace(/.*?:/, '').trim().replace(/\.\s+([a-z])/g, (_, letter) => `. ${letter.toUpperCase()}`);
+        let message = messaggio;
+
+        // Se ci sono più linee specificate, rimuovo il nome dall'inizio del messaggio perché è ridondante
+        if (affectedLines.length > 1 && categoria === 'SG') {
+            message = message.replace(/.*?:/, '');
+        } else {
+            message = message.replace(',', ', ');
+        }
+
+        // Rende maiuscole tutte le lettere dopo dopo i punto e spazio
+        message = message.replace(/\.\s+([a-z])/g, (_, letter) => `. ${letter.toUpperCase()}`).trim();
+
+        // Rende la prima lettera maiuscola
         message = message.charAt(0).toUpperCase() + message.slice(1);
+
+        // Aggiusto gli accenti
+        message = message.replace('a\'', 'à').replace('e\'', 'è').replace('i\'', 'ì');
+
+        // Metto il punto finale se non c'è
+        if (!message.endsWith('.')) {
+            message += '.';
+        }
 
         return {
             type: evento,
