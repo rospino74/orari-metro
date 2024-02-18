@@ -35,7 +35,7 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
         let message = messaggio;
 
         // Se ci sono più linee specificate, rimuovo il nome dall'inizio del messaggio perché è ridondante
-        if (affectedLines.length > 1 && categoria === 'SG') {
+        if (affectedLines.length > 1 || categoria !== 'SG') {
             message = message.replace(/.*?:/, '');
         } else {
             message = message.replace(',', ', ');
