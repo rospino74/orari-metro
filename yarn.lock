@@ -1909,7 +1909,7 @@ __metadata:
     cheerio: ^1.0.0-rc.12
     postcss: ^8.4.38
     svelte: ^4.2.12
-    svelte-check: ^3.6.7
+    svelte-check: ^3.6.8
     tailwindcss: ^3.4.1
     tslib: ^2.4.1
     typescript: ^5.4.3
@@ -3003,9 +3003,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^3.6.7":
-  version: 3.6.7
-  resolution: "svelte-check@npm:3.6.7"
+"svelte-check@npm:^3.6.8":
+  version: 3.6.8
+  resolution: "svelte-check@npm:3.6.8"
   dependencies:
     "@jridgewell/trace-mapping": ^0.3.17
     chokidar: ^3.4.1
@@ -3019,7 +3019,7 @@ __metadata:
     svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: e471b332b8d94a7dc8e142d916c23a01241465f5a58066466253ac9215f507dfccb41ffce17a9bd6eef526cfbbc3db7c0812088f093af9ba4c565b91e22c4827
+  checksum: ac3a33c0fa37784b7e3f3c418c6d6761fafc224e50a219dabdb542a1e1a9e1ad056d5fbe90acf2c903689dc2c139a363e6e55e5eb213e9e7136c876d380a9412
   languageName: node
   linkType: hard
 
