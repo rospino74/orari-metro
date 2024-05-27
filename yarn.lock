@@ -460,15 +460,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^2.5.9":
-  version: 2.5.9
-  resolution: "@sveltejs/kit@npm:2.5.9"
+"@sveltejs/kit@npm:^2.5.10":
+  version: 2.5.10
+  resolution: "@sveltejs/kit@npm:2.5.10"
   dependencies:
     "@types/cookie": ^0.6.0
     cookie: ^0.6.0
     devalue: ^5.0.0
     esm-env: ^1.0.0
-    import-meta-resolve: ^4.0.0
+    import-meta-resolve: ^4.1.0
     kleur: ^4.1.5
     magic-string: ^0.30.5
     mrmime: ^2.0.0
@@ -482,7 +482,7 @@ __metadata:
     vite: ^5.0.3
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 170cd535a87d5a6746ad222e36015edc8811a1f6bdea5fb9e398c17a6260a0f375dfe8b62f85c541420f68391fcdae8c4643be5b28c3630faf09c707fd4f6720
+  checksum: 602aad9c8920031923eefcdb3eede2b1571bfc9326de4ecc71740967d6b6d9b8fe496a2f720807d9f3da09ef2ffd2fdfc8105db0622a028beb703375b30e568b
   languageName: node
   linkType: hard
 
@@ -1637,13 +1637,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-meta-resolve@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "import-meta-resolve@npm:4.0.0"
-  checksum: 51c50115fd38e9ba21736f8d7543a58446b92d2cb5f38c9b5ec72426afeb2fb790f82051560a0f16323f44dd73d8d37c07eab5f8dc4635bcdb401daa36727b1a
-  languageName: node
-  linkType: hard
-
 "import-meta-resolve@npm:^4.1.0":
   version: 4.1.0
   resolution: "import-meta-resolve@npm:4.1.0"
@@ -1941,7 +1934,7 @@ __metadata:
   dependencies:
     "@iconify-json/material-symbols": ^1.1.80
     "@sveltejs/adapter-auto": ^3.2.1
-    "@sveltejs/kit": ^2.5.9
+    "@sveltejs/kit": ^2.5.10
     "@sveltejs/vite-plugin-svelte": ^3.1.0
     autoprefixer: ^10.4.19
     cheerio: ^1.0.0-rc.12
