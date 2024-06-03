@@ -486,34 +486,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte-inspector@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@sveltejs/vite-plugin-svelte-inspector@npm:2.0.0"
+"@sveltejs/vite-plugin-svelte-inspector@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@sveltejs/vite-plugin-svelte-inspector@npm:2.1.0"
   dependencies:
     debug: ^4.3.4
   peerDependencies:
     "@sveltejs/vite-plugin-svelte": ^3.0.0
     svelte: ^4.0.0 || ^5.0.0-next.0
     vite: ^5.0.0
-  checksum: 56014ceff0e252ace5fb3eb9520c9c56db933767c3b8ce40c4fdddfcb216a89666729748eadadb4ce532fbab06bfed49ff49bdb44e36f6eae0e3a090eb7288b5
+  checksum: 8ef577bb58f8b7b9ccc2e9fa556490be167bc1dce1b7585d98a33e12bc289c96e35d992925e2875ceb30864577aa5ba80a71d2f3215dc46a78c44f6377fe4ffe
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@sveltejs/vite-plugin-svelte@npm:3.1.0"
+"@sveltejs/vite-plugin-svelte@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@sveltejs/vite-plugin-svelte@npm:3.1.1"
   dependencies:
-    "@sveltejs/vite-plugin-svelte-inspector": ^2.0.0
+    "@sveltejs/vite-plugin-svelte-inspector": ^2.1.0
     debug: ^4.3.4
     deepmerge: ^4.3.1
     kleur: ^4.1.5
-    magic-string: ^0.30.9
+    magic-string: ^0.30.10
     svelte-hmr: ^0.16.0
     vitefu: ^0.2.5
   peerDependencies:
     svelte: ^4.0.0 || ^5.0.0-next.0
     vite: ^5.0.0
-  checksum: 7d99c058feecf2cc5d6adac0185d128f386a63e98b25c3cdfb37af326036769015904fd01938756039128b23792874c4526025df5381e31f9de85682f88ead65
+  checksum: 0871e135167b084cad28ab6236195d12de2039c7948fd24c8b0e9a7efbbccb32be33baf53476dcd62c5335a02d7e1fa367fd6b1508d90ec8214153a1b553af43
   languageName: node
   linkType: hard
 
@@ -1866,21 +1866,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"magic-string@npm:^0.30.10":
+  version: 0.30.10
+  resolution: "magic-string@npm:0.30.10"
+  dependencies:
+    "@jridgewell/sourcemap-codec": ^1.4.15
+  checksum: 456fd47c39b296c47dff967e1965121ace35417eab7f45a99e681e725b8661b48e1573c366ee67a27715025b3740773c46b088f115421c7365ea4ea6fa10d399
+  languageName: node
+  linkType: hard
+
 "magic-string@npm:^0.30.4, magic-string@npm:^0.30.5":
   version: 0.30.5
   resolution: "magic-string@npm:0.30.5"
   dependencies:
     "@jridgewell/sourcemap-codec": ^1.4.15
   checksum: da10fecff0c0a7d3faf756913ce62bd6d5e7b0402be48c3b27bfd651b90e29677e279069a63b764bcdc1b8ecdcdb898f29a5c5ec510f2323e8d62ee057a6eb18
-  languageName: node
-  linkType: hard
-
-"magic-string@npm:^0.30.9":
-  version: 0.30.9
-  resolution: "magic-string@npm:0.30.9"
-  dependencies:
-    "@jridgewell/sourcemap-codec": ^1.4.15
-  checksum: a97b9a706b39e9569781dcb662b15ab085ca3af8b916cd69d8485e8565108917c17e4eb03b6b1013389387d827bb3025711ebeafe237f742bc95a90708416147
   languageName: node
   linkType: hard
 
@@ -1935,7 +1935,7 @@ __metadata:
     "@iconify-json/material-symbols": ^1.1.81
     "@sveltejs/adapter-auto": ^3.2.1
     "@sveltejs/kit": ^2.5.10
-    "@sveltejs/vite-plugin-svelte": ^3.1.0
+    "@sveltejs/vite-plugin-svelte": ^3.1.1
     autoprefixer: ^10.4.19
     cheerio: ^1.0.0-rc.12
     postcss: ^8.4.38
