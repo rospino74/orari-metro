@@ -1939,7 +1939,7 @@ __metadata:
     autoprefixer: ^10.4.19
     cheerio: ^1.0.0-rc.12
     postcss: ^8.4.38
-    svelte: ^4.2.17
+    svelte: ^4.2.18
     svelte-check: ^3.8.0
     tailwindcss: ^3.4.3
     tslib: ^2.6.3
@@ -3081,9 +3081,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^4.2.17":
-  version: 4.2.17
-  resolution: "svelte@npm:4.2.17"
+"svelte@npm:^4.2.18":
+  version: 4.2.18
+  resolution: "svelte@npm:4.2.18"
   dependencies:
     "@ampproject/remapping": ^2.2.1
     "@jridgewell/sourcemap-codec": ^1.4.15
@@ -3099,7 +3099,7 @@ __metadata:
     locate-character: ^3.0.0
     magic-string: ^0.30.4
     periscopic: ^3.1.0
-  checksum: f06ae5a8e14f03fb78a1b70d14ca2d66cb8cf7ef06a20f9432ec8ad0327072531181a8623a0fce20ffbb661e13c1a438e56843ca2ace835d85ec17c975c36d71
+  checksum: 39e29aeaa37e3e636b74b4471ac404c4e9a0c4ecd252ec7d52299e4fb40e6c13d1b38a72441f89b20f101d8df6d7241ca9a96edd9f47e41182f6c5e95c01d449
   languageName: node
   linkType: hard
 
