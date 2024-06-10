@@ -1942,7 +1942,7 @@ __metadata:
     svelte: ^4.2.17
     svelte-check: ^3.8.0
     tailwindcss: ^3.4.3
-    tslib: ^2.4.1
+    tslib: ^2.6.3
     typescript: ^5.4.5
     unplugin-icons: ^0.19.0
     vite: ^5.2.12
@@ -3201,10 +3201,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.4.1":
-  version: 2.6.2
-  resolution: "tslib@npm:2.6.2"
-  checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
+"tslib@npm:^2.6.3":
+  version: 2.6.3
+  resolution: "tslib@npm:2.6.3"
+  checksum: 74fce0e100f1ebd95b8995fbbd0e6c91bdd8f4c35c00d4da62e285a3363aaa534de40a80db30ecfd388ed7c313c42d930ee0eaf108e8114214b180eec3dbe6f5
   languageName: node
   linkType: hard
 
