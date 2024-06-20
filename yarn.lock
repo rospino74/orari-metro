@@ -449,14 +449,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "@sveltejs/adapter-auto@npm:3.2.1"
+"@sveltejs/adapter-auto@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "@sveltejs/adapter-auto@npm:3.2.2"
   dependencies:
     import-meta-resolve: ^4.1.0
   peerDependencies:
     "@sveltejs/kit": ^2.0.0
-  checksum: 6cb43b5caf1223df3e7a2acab8b0c6a282d58cd93d99e5a532b30820096820f0e224817c2bdef0ba6b8921709a74e751a511457e190c85591ed738a27719f620
+  checksum: b1102c13c1c1dc5d8a9901320e234712feddb09ad0f50f3c7ea7546d6dcf46c1a38c858089fba7a011034627c05b218253827c1a6446a8056d5f20357eb7e561
   languageName: node
   linkType: hard
 
@@ -1933,7 +1933,7 @@ __metadata:
   resolution: "metro-orari@workspace:."
   dependencies:
     "@iconify-json/material-symbols": ^1.1.82
-    "@sveltejs/adapter-auto": ^3.2.1
+    "@sveltejs/adapter-auto": ^3.2.2
     "@sveltejs/kit": ^2.5.16
     "@sveltejs/vite-plugin-svelte": ^3.1.1
     autoprefixer: ^10.4.19
