@@ -1928,7 +1928,7 @@ __metadata:
     tslib: ^2.6.3
     typescript: ^5.5.2
     unplugin-icons: ^0.19.0
-    vite: ^5.3.2
+    vite: ^5.3.5
   languageName: unknown
   linkType: soft
 
@@ -2532,17 +2532,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: dd6daa25e781db9ae5b651d9b7bfde0ec6e60e86a37da69a18eb4773d5ddd51e28fc4ff054fbdc04636a31462e6bf09a1e50986f69ac52b10d46b7457cd36d12
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.38":
-  version: 8.4.38
-  resolution: "postcss@npm:8.4.38"
-  dependencies:
-    nanoid: ^3.3.7
-    picocolors: ^1.0.0
-    source-map-js: ^1.2.0
-  checksum: 649f9e60a763ca4b5a7bbec446a069edf07f057f6d780a5a0070576b841538d1ecf7dd888f2fbfd1f76200e26c969e405aeeae66332e6927dbdc8bdcb90b9451
   languageName: node
   linkType: hard
 
@@ -3335,13 +3324,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.3.2":
-  version: 5.3.2
-  resolution: "vite@npm:5.3.2"
+"vite@npm:^5.3.5":
+  version: 5.3.5
+  resolution: "vite@npm:5.3.5"
   dependencies:
     esbuild: ^0.21.3
     fsevents: ~2.3.3
-    postcss: ^8.4.38
+    postcss: ^8.4.39
     rollup: ^4.13.0
   peerDependencies:
     "@types/node": ^18.0.0 || >=20.0.0
@@ -3371,7 +3360,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: d6872cb72701ec4b8d8dbccc5deacb5af03c3f247df02750787d6dcf4e49e207effed7a06e4f103008a918188cdf0789ff7348db451ebd0d59ef1a22ae4a267d
+  checksum: 5412700159e8906fc5ec5ac2cbcbee8a11180803b4a7c85494ae024a4f38d77eb5ab19b556a58745d6981361f8d2e181486f115f8abd4dc6ec3761fcd895e1b2
   languageName: node
   linkType: hard
 
