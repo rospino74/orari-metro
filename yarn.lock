@@ -1924,7 +1924,7 @@ __metadata:
     postcss: ^8.4.41
     svelte: ^4.2.18
     svelte-check: ^3.8.4
-    tailwindcss: ^3.4.8
+    tailwindcss: ^3.4.10
     tslib: ^2.6.3
     typescript: ^5.5.4
     unplugin-icons: ^0.19.0
@@ -3086,9 +3086,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.8":
-  version: 3.4.8
-  resolution: "tailwindcss@npm:3.4.8"
+"tailwindcss@npm:^3.4.10":
+  version: 3.4.10
+  resolution: "tailwindcss@npm:3.4.10"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
@@ -3115,7 +3115,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: c9ffff3bd04faec4acacaef863b46caf92c5d378e68e3f22d3c300fc71adcfb73f1aaac67541ba99aa19fb1323218c91c9e86630cb9bd016b6c282c4ad4506c7
+  checksum: aa8db3514ec5110b2dee0bf5b35b84ebedf0c23a0dcafc870a5176bc2bad7d581956e0692ed6d888d602c114d2c54d7aa8fdb7028456880bd28b326078c8ba6e
   languageName: node
   linkType: hard
 
