@@ -565,13 +565,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:*, @types/estree@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@types/estree@npm:1.0.1"
-  checksum: e9aa175eacb797216fafce4d41e8202c7a75555bc55232dee0f9903d7171f8f19f0ae7d5191bb1a88cb90e65468be508c0df850a9fb81b4433b293a5a749899d
-  languageName: node
-  linkType: hard
-
 "@types/estree@npm:1.0.5":
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
@@ -579,7 +572,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:^1.0.5":
+"@types/estree@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@types/estree@npm:1.0.1"
+  checksum: e9aa175eacb797216fafce4d41e8202c7a75555bc55232dee0f9903d7171f8f19f0ae7d5191bb1a88cb90e65468be508c0df850a9fb81b4433b293a5a749899d
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:^1.0.5, @types/estree@npm:^1.0.6":
   version: 1.0.6
   resolution: "@types/estree@npm:1.0.6"
   checksum: 8825d6e729e16445d9a1dd2fb1db2edc5ed400799064cd4d028150701031af012ba30d6d03fe9df40f4d7a437d0de6d2b256020152b7b09bde9f2e420afdffd9
@@ -1691,12 +1691,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-reference@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "is-reference@npm:3.0.2"
+"is-reference@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "is-reference@npm:3.0.3"
   dependencies:
-    "@types/estree": "*"
-  checksum: ac3bf5626fe9d0afbd7454760d73c47f16b9f471401b9749721ad3b66f0a39644390382acf88ca9d029c95782c1e2ec65662855e3ba91acf52d82231247a7fd3
+    "@types/estree": ^1.0.6
+  checksum: 11371fb2669a8144bffb2ae9bd11b0342b7dc384c3c0f8d5996566b071614282a3a0d306fd2fd1c6b4c9078d0e2703d191b47f4f78f9ce08f464c44a3a412412
   languageName: node
   linkType: hard
 
@@ -1863,7 +1863,7 @@ __metadata:
     autoprefixer: ^10.4.20
     cheerio: ^1.0.0
     postcss: ^8.4.47
-    svelte: ^5.1.12
+    svelte: ^5.2.2
     svelte-check: ^4.0.5
     tailwindcss: ^3.4.14
     tslib: ^2.8.1
@@ -2832,9 +2832,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.1.12":
-  version: 5.1.12
-  resolution: "svelte@npm:5.1.12"
+"svelte@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "svelte@npm:5.2.2"
   dependencies:
     "@ampproject/remapping": ^2.3.0
     "@jridgewell/sourcemap-codec": ^1.5.0
@@ -2845,11 +2845,11 @@ __metadata:
     axobject-query: ^4.1.0
     esm-env: ^1.0.0
     esrap: ^1.2.2
-    is-reference: ^3.0.2
+    is-reference: ^3.0.3
     locate-character: ^3.0.0
     magic-string: ^0.30.11
     zimmerframe: ^1.1.2
-  checksum: 13a8a855fbbb738ded87a7552087206fa4d13f155aa644a6be4a8e4e1978d89d499972e5abfa18e2843042ae631c3d3c7fd4a80c55e093577c6d58882cdb7fcf
+  checksum: 088e10c40f36211d5f66afd2a08758d696301ff71d739b590e2d15361bf80f6588ea00df811e6004dcf9263422c6b1b5eef481da2b020942a887a43b805f6594
   languageName: node
   linkType: hard
 
