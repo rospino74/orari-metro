@@ -565,13 +565,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:*, @types/estree@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@types/estree@npm:1.0.1"
-  checksum: e9aa175eacb797216fafce4d41e8202c7a75555bc55232dee0f9903d7171f8f19f0ae7d5191bb1a88cb90e65468be508c0df850a9fb81b4433b293a5a749899d
-  languageName: node
-  linkType: hard
-
 "@types/estree@npm:1.0.5":
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
@@ -579,7 +572,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:^1.0.5":
+"@types/estree@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@types/estree@npm:1.0.1"
+  checksum: e9aa175eacb797216fafce4d41e8202c7a75555bc55232dee0f9903d7171f8f19f0ae7d5191bb1a88cb90e65468be508c0df850a9fb81b4433b293a5a749899d
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:^1.0.5, @types/estree@npm:^1.0.6":
   version: 1.0.6
   resolution: "@types/estree@npm:1.0.6"
   checksum: 8825d6e729e16445d9a1dd2fb1db2edc5ed400799064cd4d028150701031af012ba30d6d03fe9df40f4d7a437d0de6d2b256020152b7b09bde9f2e420afdffd9
@@ -1291,13 +1291,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esrap@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "esrap@npm:1.2.2"
+"esm-env@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "esm-env@npm:1.2.1"
+  checksum: 17abe7f8ce066f24682b4face63f069dd7e565ac591c1ee11d29cd8b32c814ef51e86cc0539e112658fe56cebfd203c1a5889be17bcd49effed07376f12d6d55
+  languageName: node
+  linkType: hard
+
+"esrap@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "esrap@npm:1.2.3"
   dependencies:
     "@jridgewell/sourcemap-codec": ^1.4.15
     "@types/estree": ^1.0.1
-  checksum: 23327761d9fa3a4389007f354b6217725b63dcf09601debcf0ccfd04efc28da88949f411800059c151a81d61bfa2bcd929b578b3cee5015f68072e804dff2c5c
+  checksum: c3bf80621a532d2fc08b6376d360efb9964894f5e352f4f817a4d3228689253219948d3af3d7c9613e1d8c706e4f8428eea8149e991bd7e84693adbb5c61ef3a
   languageName: node
   linkType: hard
 
@@ -1691,12 +1698,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-reference@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "is-reference@npm:3.0.2"
+"is-reference@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "is-reference@npm:3.0.3"
   dependencies:
-    "@types/estree": "*"
-  checksum: ac3bf5626fe9d0afbd7454760d73c47f16b9f471401b9749721ad3b66f0a39644390382acf88ca9d029c95782c1e2ec65662855e3ba91acf52d82231247a7fd3
+    "@types/estree": ^1.0.6
+  checksum: 11371fb2669a8144bffb2ae9bd11b0342b7dc384c3c0f8d5996566b071614282a3a0d306fd2fd1c6b4c9078d0e2703d191b47f4f78f9ce08f464c44a3a412412
   languageName: node
   linkType: hard
 
@@ -1863,7 +1870,7 @@ __metadata:
     autoprefixer: ^10.4.20
     cheerio: ^1.0.0
     postcss: ^8.4.47
-    svelte: ^5.1.12
+    svelte: ^5.14.0
     svelte-check: ^4.0.5
     tailwindcss: ^3.4.14
     tslib: ^2.8.1
@@ -2832,9 +2839,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.1.12":
-  version: 5.1.12
-  resolution: "svelte@npm:5.1.12"
+"svelte@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "svelte@npm:5.14.0"
   dependencies:
     "@ampproject/remapping": ^2.3.0
     "@jridgewell/sourcemap-codec": ^1.5.0
@@ -2843,13 +2850,13 @@ __metadata:
     acorn-typescript: ^1.4.13
     aria-query: ^5.3.1
     axobject-query: ^4.1.0
-    esm-env: ^1.0.0
-    esrap: ^1.2.2
-    is-reference: ^3.0.2
+    esm-env: ^1.2.1
+    esrap: ^1.2.3
+    is-reference: ^3.0.3
     locate-character: ^3.0.0
     magic-string: ^0.30.11
     zimmerframe: ^1.1.2
-  checksum: 13a8a855fbbb738ded87a7552087206fa4d13f155aa644a6be4a8e4e1978d89d499972e5abfa18e2843042ae631c3d3c7fd4a80c55e093577c6d58882cdb7fcf
+  checksum: 4e5eb4dc9d952ee376c04525e8d16507e95834b3ded3dcc8dc68add43c84f82c9793f9326db69b714ad666e6a06eedb2e8ced604882719319bd1a51d3eb63dff
   languageName: node
   linkType: hard
 
