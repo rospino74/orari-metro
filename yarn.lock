@@ -495,14 +495,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^2.7.4":
-  version: 2.7.4
-  resolution: "@sveltejs/kit@npm:2.7.4"
+"@sveltejs/kit@npm:^2.15.2":
+  version: 2.15.2
+  resolution: "@sveltejs/kit@npm:2.15.2"
   dependencies:
     "@types/cookie": ^0.6.0
     cookie: ^0.6.0
     devalue: ^5.1.0
-    esm-env: ^1.0.0
+    esm-env: ^1.2.1
     import-meta-resolve: ^4.1.0
     kleur: ^4.1.5
     magic-string: ^0.30.5
@@ -512,12 +512,12 @@ __metadata:
     sirv: ^3.0.0
     tiny-glob: ^0.2.9
   peerDependencies:
-    "@sveltejs/vite-plugin-svelte": ^3.0.0 || ^4.0.0-next.1
+    "@sveltejs/vite-plugin-svelte": ^3.0.0 || ^4.0.0-next.1 || ^5.0.0
     svelte: ^4.0.0 || ^5.0.0-next.0
-    vite: ^5.0.3
+    vite: ^5.0.3 || ^6.0.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: d81135003450de070d74e49965fa7c36020638aef9f7f8e102b37f9fcc10c653808117e9c709b688dead33ba27dbe72667c29c1790760e8ae8fd3f10a8195157
+  checksum: 5cbba545fdb5c083b1f3e51d2ae26634b7ff1229a08a7607f0370d382ef07ad30a4e08cab72fa98d5b4c884cd6a37f9156a8183ae6ddfb68a419642684a371d8
   languageName: node
   linkType: hard
 
@@ -1284,13 +1284,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esm-env@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "esm-env@npm:1.0.0"
-  checksum: 3372b918ebb213b2c31e9a6ebc437e1f20062363413f837b6ca4c47bda38d7ba983c3a1a8eb8d9d8434969e9366bba8632743f1b8c7cf637a9c8a25ae95d865e
-  languageName: node
-  linkType: hard
-
 "esm-env@npm:^1.2.1":
   version: 1.2.1
   resolution: "esm-env@npm:1.2.1"
@@ -1864,7 +1857,7 @@ __metadata:
   dependencies:
     "@iconify-json/material-symbols": ^1.2.1
     "@sveltejs/adapter-auto": ^3.3.1
-    "@sveltejs/kit": ^2.7.4
+    "@sveltejs/kit": ^2.15.2
     "@sveltejs/vite-plugin-svelte": ^4.0.0
     autoprefixer: ^10.4.20
     cheerio: ^1.0.0
