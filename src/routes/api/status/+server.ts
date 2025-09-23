@@ -31,7 +31,7 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
 
         // Tolgo "Ascensore", "Funicolare" e "Cremagliera" dal nome della linea visto che il tipo è già presente in affectedKind
         affectedLines = affectedLines.map((linea) => linea
-            .replace(/(ascensore(?: di)?|funicolare|cremagliera)\s+/i, '')
+            .replace(/(ascensor[ei](?: di)?|funicolare|cremagliera)\s+/i, '')
             .replace('volabus', 'VLB')
         );
 
