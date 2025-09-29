@@ -12,16 +12,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ampproject/remapping@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@ampproject/remapping@npm:2.3.0"
-  dependencies:
-    "@jridgewell/gen-mapping": ^0.3.5
-    "@jridgewell/trace-mapping": ^0.3.24
-  checksum: d3ad7b89d973df059c4e8e6d7c972cbeb1bb2f18f002a3bd04ae0707da214cb06cc06929b65aa2313b9347463df2914772298bae8b1d7973f246bb3f2ab3e8f0
-  languageName: node
-  linkType: hard
-
 "@antfu/install-pkg@npm:^1.1.0":
   version: 1.1.0
   resolution: "@antfu/install-pkg@npm:1.1.0"
@@ -289,7 +279,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/remapping@npm:^2.3.5":
+"@jridgewell/remapping@npm:^2.3.4, @jridgewell/remapping@npm:^2.3.5":
   version: 2.3.5
   resolution: "@jridgewell/remapping@npm:2.3.5"
   dependencies:
@@ -682,15 +672,6 @@ __metadata:
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
   checksum: a4a97ec07d7ea112c517036882b2ac22f3109b7b19077dc656316d07d308438aac28e4d9746dc4d84bf6b1e75b4a7b0a5f3cb30592419f128ca9a8cee3bcfa17
-  languageName: node
-  linkType: hard
-
-"acorn-typescript@npm:^1.4.13":
-  version: 1.4.13
-  resolution: "acorn-typescript@npm:1.4.13"
-  peerDependencies:
-    acorn: ">=8.9.0"
-  checksum: 1856ea4868b1b7a6f9326aaff4f365d77dec2cbb2115697857981980184e955e4221cf1d3d02cc313e310b6901bc2011351cbba9d4225328bb1aab30fd68aaa0
   languageName: node
   linkType: hard
 
@@ -1404,12 +1385,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esrap@npm:^1.3.2":
-  version: 1.3.2
-  resolution: "esrap@npm:1.3.2"
+"esrap@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "esrap@npm:2.1.0"
   dependencies:
     "@jridgewell/sourcemap-codec": ^1.4.15
-  checksum: 2d3569ae75dc493efa46c0fd7d4a3258794ffb08bc069203c0440f57862d2a431a3e66a7383a566e00f8f057a276e715a05c82d18f5d2f701d78fa44ead90ca5
+  checksum: 19361da3d8b6794a26571a7ec1777c7a5e4f6d681cc5f36ec5d737e12aeb82917e2279b108d03e05d2926d6f6dadd54e441a4250c7430df6d858488aecf04606
   languageName: node
   linkType: hard
 
@@ -1983,7 +1964,7 @@ __metadata:
     autoprefixer: ^10.4.20
     cheerio: ^1.0.0
     postcss: ^8.4.49
-    svelte: ^5.16.2
+    svelte: ^5.39.6
     svelte-check: ^4.3.2
     tailwindcss: ^3.4.14
     tslib: ^2.8.1
@@ -2976,25 +2957,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.16.2":
-  version: 5.16.2
-  resolution: "svelte@npm:5.16.2"
+"svelte@npm:^5.39.6":
+  version: 5.39.6
+  resolution: "svelte@npm:5.39.6"
   dependencies:
-    "@ampproject/remapping": ^2.3.0
+    "@jridgewell/remapping": ^2.3.4
     "@jridgewell/sourcemap-codec": ^1.5.0
+    "@sveltejs/acorn-typescript": ^1.0.5
     "@types/estree": ^1.0.5
     acorn: ^8.12.1
-    acorn-typescript: ^1.4.13
     aria-query: ^5.3.1
     axobject-query: ^4.1.0
     clsx: ^2.1.1
     esm-env: ^1.2.1
-    esrap: ^1.3.2
+    esrap: ^2.1.0
     is-reference: ^3.0.3
     locate-character: ^3.0.0
     magic-string: ^0.30.11
     zimmerframe: ^1.1.2
-  checksum: 34e72b15b69479aab1212451aba16d1a773d830c5a0324d8589879611935cbf533a9af0077e02639d3d8ff8cff1ef8c464597732701cedd82f4a982aeced53b6
+  checksum: 9ee6794fc9c34b9b4830c1cbe3c916ddda01304990daa69896b68ccc5ff359af82f0880cac28b557446895f363f93c3ec7825add2dba2b8df71dc64e3263c13b
   languageName: node
   linkType: hard
 
