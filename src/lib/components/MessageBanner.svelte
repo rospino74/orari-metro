@@ -23,6 +23,8 @@
 </footer>
 
 <style>
+    @reference "../../app.css";
+    
     footer {
         @apply w-full h-full py-4 px-8 flex gap-4;
     }

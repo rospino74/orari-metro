@@ -41,6 +41,8 @@
 </div>
 
 <style>
+    @reference "../../app.css";
+    
     div {
         @apply flex gap-4 items-center w-full;
     }

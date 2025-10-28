@@ -2,6 +2,8 @@
     <h2><slot /></h2>
 </div>
 <style>
+    @reference "../../app.css";
+    
     div {
         @apply inline-flex items-center;
     }

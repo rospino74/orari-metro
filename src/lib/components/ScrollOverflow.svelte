@@ -49,6 +49,8 @@
 </div>
 
 <style>
+    @reference "../../app.css";
+    
     .guard {
         @apply overflow-hidden;
     }

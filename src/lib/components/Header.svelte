@@ -71,6 +71,8 @@
 </header>
 
 <style>
+    @reference "../../app.css";
+    
     header {
         @apply w-full h-full py-4 px-8 flex justify-between items-center border-b-2 border-solid border-b-neutral-700;
     }

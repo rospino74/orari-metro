@@ -60,6 +60,8 @@
 </main>
 
 <style>
+    @reference "../../../app.css";
+    
     main {
         @apply h-full;
     }

@@ -16,7 +16,9 @@
     {/each}
 </ul>
 
-<style lang="postcss">
+<style>
+    @reference "../app.css";
+
     ul {
         @apply list-disc;
     }
