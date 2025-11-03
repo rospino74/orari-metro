@@ -1980,7 +1980,7 @@ __metadata:
     "@sveltejs/vite-plugin-svelte": ^6.2.1
     "@tailwindcss/vite": ^4.1.15
     cheerio: ^1.1.2
-    svelte: ^5.41.1
+    svelte: ^5.43.2
     svelte-check: ^4.3.3
     tailwindcss: ^4.1.15
     tslib: ^2.8.1
@@ -2691,9 +2691,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.41.1":
-  version: 5.41.1
-  resolution: "svelte@npm:5.41.1"
+"svelte@npm:^5.43.2":
+  version: 5.43.2
+  resolution: "svelte@npm:5.43.2"
   dependencies:
     "@jridgewell/remapping": ^2.3.4
     "@jridgewell/sourcemap-codec": ^1.5.0
@@ -2709,7 +2709,7 @@ __metadata:
     locate-character: ^3.0.0
     magic-string: ^0.30.11
     zimmerframe: ^1.1.2
-  checksum: c9829aeb411f0bcf18075f95110d43103bbe01667537bf49db6fefb6cfe3e93992336d455afbb44190804f180fb0ed7501608bc4b905f316ff31c1221fbc5d41
+  checksum: 090d8f443cd79bd8e9e6627ea864df2bc14f9c34d6291afe945974afd92935c43fc6b5510be1d880eb7419e3995a78eb30b6dfff8830f994f487dde3b960ef57
   languageName: node
   linkType: hard
 
