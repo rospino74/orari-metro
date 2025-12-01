@@ -1191,6 +1191,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"devalue@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "devalue@npm:5.5.0"
+  checksum: 0fc27adfebcbd7281993cb6914c79a73171e2d69aa2cb033e62d45f3b890c60d98e2f7d23f2f41ebeebf2217a9beba1199834ca397e274eb6ac2c2833b4d7cfd
+  languageName: node
+  linkType: hard
+
 "dom-serializer@npm:^2.0.0":
   version: 2.0.0
   resolution: "dom-serializer@npm:2.0.0"
@@ -1421,12 +1428,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esrap@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "esrap@npm:2.1.0"
+"esrap@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "esrap@npm:2.2.0"
   dependencies:
     "@jridgewell/sourcemap-codec": ^1.4.15
-  checksum: 19361da3d8b6794a26571a7ec1777c7a5e4f6d681cc5f36ec5d737e12aeb82917e2279b108d03e05d2926d6f6dadd54e441a4250c7430df6d858488aecf04606
+  checksum: 7eb307e7289dd091191af869013ddc92432897ab61373a6a8e2f9474fd9fae35b36a78a46a43595c1092a5548393e2c062a7641ac28b14e9cdd7386e1f698f3a
   languageName: node
   linkType: hard
 
@@ -1980,7 +1987,7 @@ __metadata:
     "@sveltejs/vite-plugin-svelte": ^6.2.1
     "@tailwindcss/vite": ^4.1.15
     cheerio: ^1.1.2
-    svelte: ^5.43.2
+    svelte: ^5.45.2
     svelte-check: ^4.3.3
     tailwindcss: ^4.1.15
     tslib: ^2.8.1
@@ -2691,9 +2698,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.43.2":
-  version: 5.43.2
-  resolution: "svelte@npm:5.43.2"
+"svelte@npm:^5.45.2":
+  version: 5.45.2
+  resolution: "svelte@npm:5.45.2"
   dependencies:
     "@jridgewell/remapping": ^2.3.4
     "@jridgewell/sourcemap-codec": ^1.5.0
@@ -2703,13 +2710,14 @@ __metadata:
     aria-query: ^5.3.1
     axobject-query: ^4.1.0
     clsx: ^2.1.1
+    devalue: ^5.5.0
     esm-env: ^1.2.1
-    esrap: ^2.1.0
+    esrap: ^2.2.0
     is-reference: ^3.0.3
     locate-character: ^3.0.0
     magic-string: ^0.30.11
     zimmerframe: ^1.1.2
-  checksum: 090d8f443cd79bd8e9e6627ea864df2bc14f9c34d6291afe945974afd92935c43fc6b5510be1d880eb7419e3995a78eb30b6dfff8830f994f487dde3b960ef57
+  checksum: 1f4fb0632b730c9307ab6839991f6a1053c24e24bb4e4e9cf951d6ebb84b7a7caa71cb53d7864d80e584302b72003afb02e81cd2cc5688dd2fa439e844918559
   languageName: node
   linkType: hard
 
