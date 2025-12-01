@@ -1982,7 +1982,7 @@ __metadata:
     cheerio: ^1.1.2
     svelte: ^5.43.2
     svelte-check: ^4.3.3
-    tailwindcss: ^4.1.15
+    tailwindcss: ^4.1.17
     tslib: ^2.8.1
     typescript: ^5.9.3
     unplugin-icons: ^22.5.0
@@ -2713,10 +2713,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.1.16, tailwindcss@npm:^4.1.15":
+"tailwindcss@npm:4.1.16":
   version: 4.1.16
   resolution: "tailwindcss@npm:4.1.16"
   checksum: 04081aeb7cdb38834974a19d65802890370d37358332375ae81085b0be3dc202b85d496442cd2f10ae9bda3e039feedb1d9968236bdec2b188efebda504282d5
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.1.17":
+  version: 4.1.17
+  resolution: "tailwindcss@npm:4.1.17"
+  checksum: d3b66a81a46ede234018ed06f4c5390b42652ee29b880ac9858fa688ebbdfa0e66fcfdd6c98cc6ed08da3711b933898b660fc929160744447a34aefdd38e7708
   languageName: node
   linkType: hard
 
