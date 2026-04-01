@@ -59,7 +59,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/utils@npm:^3.0.2":
+"@iconify/utils@npm:^3.1.0":
   version: 3.1.0
   resolution: "@iconify/utils@npm:3.1.0"
   dependencies:
@@ -748,7 +748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.3.4, debug@npm:^4.4.3":
+"debug@npm:4, debug@npm:^4.3.4":
   version: 4.4.3
   resolution: "debug@npm:4.4.3"
   dependencies:
@@ -1374,7 +1374,7 @@ __metadata:
     tailwindcss: "npm:^4.2.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:^6.0.2"
-    unplugin-icons: "npm:^22.5.0"
+    unplugin-icons: "npm:^23.0.1"
     vite: "npm:^8.0.3"
   languageName: unknown
   linkType: soft
@@ -1553,7 +1553,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"obug@npm:^2.1.0":
+"obug@npm:^2.1.0, obug@npm:^2.1.1":
   version: 2.1.1
   resolution: "obug@npm:2.1.1"
   checksum: 10c0/59dccd7de72a047e08f8649e94c1015ec72f94eefb6ddb57fb4812c4b425a813bc7e7cd30c9aca20db3c59abc3c85cc7a62bb656a968741d770f4e8e02bc2e78
@@ -2008,22 +2008,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^22.5.0":
-  version: 22.5.0
-  resolution: "unplugin-icons@npm:22.5.0"
+"unplugin-icons@npm:^23.0.1":
+  version: 23.0.1
+  resolution: "unplugin-icons@npm:23.0.1"
   dependencies:
     "@antfu/install-pkg": "npm:^1.1.0"
-    "@iconify/utils": "npm:^3.0.2"
-    debug: "npm:^4.4.3"
+    "@iconify/utils": "npm:^3.1.0"
     local-pkg: "npm:^1.1.2"
-    unplugin: "npm:^2.3.10"
+    obug: "npm:^2.1.1"
+    unplugin: "npm:^2.3.11"
   peerDependencies:
     "@svgr/core": ">=7.0.0"
     "@svgx/core": ^1.0.1
-    "@vue/compiler-sfc": ^3.0.2 || ^2.7.0
+    "@vue/compiler-sfc": ^3.0.2
     svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
-    vue-template-compiler: ^2.6.12
-    vue-template-es2015-compiler: ^1.9.0
   peerDependenciesMeta:
     "@svgr/core":
       optional: true
@@ -2033,15 +2031,11 @@ __metadata:
       optional: true
     svelte:
       optional: true
-    vue-template-compiler:
-      optional: true
-    vue-template-es2015-compiler:
-      optional: true
-  checksum: 10c0/94347b1ba2727370b3cd273b5d721a76cd2ce22350455c1744284d1ac5679586ded7197836246c3d45af7da54d11e75f62564be7450d50ecccc693c5a0fc27cb
+  checksum: 10c0/a4e39f973370989349e9cf8e9b5596ad0bf83e03e2cc79d196a5e063d9ba71bbdd3a7bc24b43be4378c9977e9247275fef3508e93a3023e0d82563ece6e97530
   languageName: node
   linkType: hard
 
-"unplugin@npm:^2.3.10":
+"unplugin@npm:^2.3.11":
   version: 2.3.11
   resolution: "unplugin@npm:2.3.11"
   dependencies:
