@@ -24,7 +24,7 @@
 		"tslib": "^2.8.1",
 		"typescript": "^6.0.3",
 		"unplugin-icons": "^23.0.1",
-		"vite": "^8.0.5"
+		"vite": "^8.0.10"
 	},
 	"type": "module",
 	"packageManager": "yarn@4.12.0",
