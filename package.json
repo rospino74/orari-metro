@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@iconify-json/material-symbols": "^1.2.69",
 		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.59.0",
+		"@sveltejs/kit": "^2.60.1",
 		"@sveltejs/vite-plugin-svelte": "^7.0.0",
 		"@tailwindcss/vite": "^4.2.4",
 		"svelte": "^5.55.7",
