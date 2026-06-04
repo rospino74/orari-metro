@@ -1275,7 +1275,7 @@ __metadata:
     "@tailwindcss/vite": "npm:^4.2.4"
     cheerio: "npm:^1.2.0"
     svelte: "npm:^5.56.1"
-    svelte-check: "npm:^4.4.7"
+    svelte-check: "npm:^4.5.0"
     tailwindcss: "npm:^4.2.4"
     tslib: "npm:^2.8.1"
     typescript: "npm:^6.0.3"
@@ -1754,9 +1754,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^4.4.7":
-  version: 4.4.7
-  resolution: "svelte-check@npm:4.4.7"
+"svelte-check@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "svelte-check@npm:4.5.0"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
     chokidar: "npm:^4.0.1"
@@ -1768,7 +1768,7 @@ __metadata:
     typescript: ">=5.0.0"
   bin:
     svelte-check: bin/svelte-check
-  checksum: 10c0/55d4001b15d2e8734d70dd65b48de992cc781ce42831d17bef6a4b3f7f5888fd82ce1354d04218969d3a56e792efd8c571993940aa8a6a485ec08b98b32df4c4
+  checksum: 10c0/a099676eee1400e26e0a67409f8422cb99bac07d3cb108b1cc50c48c113efb50dffa0320943bffdf77a19a0ac46eccfcc5047783404b91374002002aba28c0b8
   languageName: node
   linkType: hard
 
