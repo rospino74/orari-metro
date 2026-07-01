@@ -345,6 +345,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sveltejs/load-config@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@sveltejs/load-config@npm:0.2.0"
+  checksum: 10c0/abb9f8533493661a31d0c0aa9ebd143afeff3a81e7ca5b9e41f1d61cebe31cbeb8ea717a66b3ff146d940bb5d32e8caf94e2ac5f282ae8f268e28dbaa19421ab
+  languageName: node
+  linkType: hard
+
 "@sveltejs/vite-plugin-svelte@npm:^7.1.2":
   version: 7.1.2
   resolution: "@sveltejs/vite-plugin-svelte@npm:7.1.2"
@@ -1236,7 +1243,7 @@ __metadata:
     "@tailwindcss/vite": "npm:^4.3.0"
     cheerio: "npm:^1.2.0"
     svelte: "npm:^5.56.1"
-    svelte-check: "npm:^4.5.0"
+    svelte-check: "npm:^4.7.1"
     tailwindcss: "npm:^4.3.0"
     tslib: "npm:^2.8.1"
     typescript: "npm:^6.0.3"
@@ -1715,11 +1722,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "svelte-check@npm:4.5.0"
+"svelte-check@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "svelte-check@npm:4.7.1"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
+    "@sveltejs/load-config": "npm:^0.2.0"
     chokidar: "npm:^4.0.1"
     fdir: "npm:^6.2.0"
     picocolors: "npm:^1.0.0"
@@ -1729,7 +1737,7 @@ __metadata:
     typescript: ">=5.0.0"
   bin:
     svelte-check: bin/svelte-check
-  checksum: 10c0/a099676eee1400e26e0a67409f8422cb99bac07d3cb108b1cc50c48c113efb50dffa0320943bffdf77a19a0ac46eccfcc5047783404b91374002002aba28c0b8
+  checksum: 10c0/2c836957acf2571c730d0fe484713905db63c3b0c6d8c9c8fb2a4d58dd1b0dee40b4078f2f0ef290a84efcce0cfc03128ba9275c37d6c577b0b630bf8f59361f
   languageName: node
   linkType: hard
 
