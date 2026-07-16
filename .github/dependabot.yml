@@ -10,4 +10,5 @@ updates:
       svelte:
         patterns:
           - "svelte"
+          - "svelte-check"
           - "@sveltejs/*"
