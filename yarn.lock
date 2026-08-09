@@ -343,9 +343,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^2.69.3":
-  version: 2.69.3
-  resolution: "@sveltejs/kit@npm:2.69.3"
+"@sveltejs/kit@npm:^2.70.2":
+  version: 2.70.2
+  resolution: "@sveltejs/kit@npm:2.70.2"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     "@sveltejs/acorn-typescript": "npm:^1.0.9"
@@ -372,7 +372,7 @@ __metadata:
       optional: true
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 10c0/8d65f1430707f452e942875ffab9de8712b9da593c671609e4740c9b91bf0d0dfed1d77597d051be18a33810e7f79f5869c412643d5146a1d443365816531d88
+  checksum: 10c0/fbdb5d1f4761ed415be875bbccc6244ee59e9ccd783b29016c9c7b5b4e832348276a72b6452c316c186e137f1ad63280c19f1f5801626bde321531599a6584c8
   languageName: node
   linkType: hard
 
@@ -1278,7 +1278,7 @@ __metadata:
   dependencies:
     "@iconify-json/material-symbols": "npm:^1.2.85"
     "@sveltejs/adapter-auto": "npm:^7.0.1"
-    "@sveltejs/kit": "npm:^2.69.3"
+    "@sveltejs/kit": "npm:^2.70.2"
     "@sveltejs/vite-plugin-svelte": "npm:^7.2.0"
     "@tailwindcss/vite": "npm:^4.3.2"
     cheerio: "npm:^1.2.0"
