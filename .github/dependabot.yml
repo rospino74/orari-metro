@@ -12,3 +12,7 @@ updates:
           - "svelte"
           - "svelte-check"
           - "@sveltejs/*"
+      tailwind:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
