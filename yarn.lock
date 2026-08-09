@@ -343,9 +343,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^2.70.1":
-  version: 2.70.1
-  resolution: "@sveltejs/kit@npm:2.70.1"
+"@sveltejs/kit@npm:^2.70.2":
+  version: 2.70.2
+  resolution: "@sveltejs/kit@npm:2.70.2"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     "@sveltejs/acorn-typescript": "npm:^1.0.9"
@@ -372,7 +372,7 @@ __metadata:
       optional: true
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 10c0/c510b42510622292b9ad34b048141634d92a1e6ff71f03dfc02c93fa2e7765be0b0a8bbc15101b8deae30a69cd36b8cba4b2ac4cfb3802bef1c037eac5ea689d
+  checksum: 10c0/fbdb5d1f4761ed415be875bbccc6244ee59e9ccd783b29016c9c7b5b4e832348276a72b6452c316c186e137f1ad63280c19f1f5801626bde321531599a6584c8
   languageName: node
   linkType: hard
 
@@ -1061,9 +1061,9 @@ __metadata:
   linkType: hard
 
 "ip-address@npm:^10.0.1":
-  version: 10.2.0
-  resolution: "ip-address@npm:10.2.0"
-  checksum: 10c0/5a00aada6e922c9c69dfc800ed5d0fa3348675ebdeed0e1575f503f27ca385b5f534363c9af7ad1daf64c1f1409388cdd3cc2e9b9b0fe1c924a431378d55075a
+  version: 10.4.0
+  resolution: "ip-address@npm:10.4.0"
+  checksum: 10c0/d7b0bd2624fd861afbae6e49036a9b56f9506eaff7ff38592b7b4492dd5c272b53f5356dc8cc019e318acf29a96c90a3d1af1df761960267d23efa96858270fa
   languageName: node
   linkType: hard
 
@@ -1278,7 +1278,7 @@ __metadata:
   dependencies:
     "@iconify-json/material-symbols": "npm:^1.2.85"
     "@sveltejs/adapter-auto": "npm:^7.0.1"
-    "@sveltejs/kit": "npm:^2.70.1"
+    "@sveltejs/kit": "npm:^2.70.2"
     "@sveltejs/vite-plugin-svelte": "npm:^7.2.0"
     "@tailwindcss/vite": "npm:^4.3.2"
     cheerio: "npm:^1.2.0"
