@@ -14,8 +14,8 @@
 	},
 	"devDependencies": {
 		"@iconify-json/material-symbols": "^1.2.90",
-		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/adapter-auto": "^8.0.0",
+		"@sveltejs/kit": "^3.0.0",
 		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"@tailwindcss/vite": "^4.3.3",
 		"svelte": "^5.57.1",
@@ -30,5 +30,9 @@
 	"packageManager": "yarn@4.12.0",
 	"dependencies": {
 		"cheerio": "^1.2.0"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
 	}
 }

@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { LayoutData } from "../$types";
 
-    import Header from "$lib/components/Header.svelte";
-    import MessageBanner from "$lib/components/MessageBanner.svelte";
+    import Header from "#lib/components/Header.svelte";
+    import MessageBanner from "#lib/components/MessageBanner.svelte";
     import { slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
     import { invalidate } from "$app/navigation";

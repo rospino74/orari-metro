@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import stops from "$lib/server/stops"
+import stops from "#lib/server/stops.js"
 
 export const prerender = true;
 

@@ -1,8 +1,8 @@
-import { error, json } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import getBusTransits from "$lib/server/getBusTransits"
-import { sortTransits } from '$lib/utils/utils';
-import { deserializeBusStopsFromParam } from '$lib/utils/serialize';
+import getBusTransits from "#lib/server/getBusTransits.js"
+import { sortTransits } from '#lib/utils/utils.js';
+import { deserializeBusStopsFromParam } from '#lib/utils/serialize.js';
 
 
 export const GET: RequestHandler = async ({ params, setHeaders }) => {
@@ -25,5 +25,5 @@ export const GET: RequestHandler = async ({ params, setHeaders }) => {
         'Age': new Date().getUTCSeconds().toString(),
     });
 
-    return json(transits);
+    return Response.json(transits);
 };

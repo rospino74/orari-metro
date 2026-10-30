@@ -1,12 +1,11 @@
 import type { RequestHandler } from './$types';
-import { json } from '@sveltejs/kit';
-import { OPENWEATHER_API_KEY } from '$env/static/private';
+import { OPENWEATHER_API_KEY } from '$app/env/private';
 
 export const GET: RequestHandler = async ({ params, setHeaders, fetch }) => {
     // Genova
     const lat = 44.4101042, lon = 8.9240217;
 
-    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${lat}&lon=${lon}&appid=${OPENWEATHER_API_KEY}`).then(r => r.json());
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${lat}&lon=${lon}&appid=${OPENWEATHER_API_KEY}`).then((r) => r.json());
     const { weather, main } = res;
 
     const conditionID: number = weather[0].id;
@@ -36,7 +35,7 @@ export const GET: RequestHandler = async ({ params, setHeaders, fetch }) => {
     temperature = Math.round(temperature);
 
 
-    return json({
+    return Response.json({
         condition,
         temperature,
     } as Weather);

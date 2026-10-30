@@ -1,7 +1,7 @@
 <script lang="ts">
     import ScrollOverflow from "./ScrollOverflow.svelte";
-    import { getCorrectTextColor } from "$lib/utils/colors";
-    import { padEndArray } from "$lib/utils/utils";
+    import { getCorrectTextColor } from "#lib/utils/colors.js";
+    import { padEndArray } from "#lib/utils/utils.js";
 
     export let transit: Transit;
 
