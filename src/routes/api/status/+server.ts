@@ -1,6 +1,5 @@
 import type { RequestHandler } from './$types';
-import { json } from '@sveltejs/kit';
-import { dateFromItalianTime } from '$lib/utils/utils';
+import { dateFromItalianTime } from '#lib/utils/utils.js';
 
 type Stato = { stato?: Array<{ evento: string, categoria: string, linee: string | string[], causa: string, data: string, messaggio: string }> }
 
@@ -10,7 +9,7 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
 
     if (!stato) {
         // Bad Gateway risposta non valida dal server
-        return { status: 502 };
+        return new Response(null, { status: 502 });
     }
 
     const out = stato.map(({ evento, categoria, linee, messaggio, data }) => {
@@ -73,5 +72,5 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
         'Access-Control-Allow-Origin': '*',
     });
 
-    return json(out);
+    return Response.json(out);
 };

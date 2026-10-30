@@ -1,6 +1,6 @@
 import type { RequestHandler } from './$types';
-import { error, text } from '@sveltejs/kit';
-import { dateFromItalianTime } from '$lib/utils/utils';
+import { error } from '@sveltejs/kit';
+import { dateFromItalianTime } from '#lib/utils/utils.js';
 
 export const GET: RequestHandler = async ({ params, fetch, url, setHeaders }) => {
     const lineID = params.line;
@@ -12,9 +12,9 @@ export const GET: RequestHandler = async ({ params, fetch, url, setHeaders }) =>
     // Preparo la data da parametri di query
     const date = new Date();
 
-    const month = parseInt(url.searchParams.get('month')) || date.getMonth() + 1;
-    const year = parseInt(url.searchParams.get('year')) || date.getFullYear();
-    const day = parseInt(url.searchParams.get('day')) || date.getDate();
+    const month = parseInt(url.searchParams.get('month') ?? '') || date.getMonth() + 1;
+    const year = parseInt(url.searchParams.get('year') ?? '') || date.getFullYear();
+    const day = parseInt(url.searchParams.get('day') ?? '') || date.getDate();
 
     if (month < 1 || month > 12) {
         return error(400, 'Month not valid!');
@@ -52,5 +52,5 @@ export const GET: RequestHandler = async ({ params, fetch, url, setHeaders }) =>
         'Content-Type': 'text/xml',
     });
 
-    return text(await req.text());
+    return new Response(await req.text());
 };

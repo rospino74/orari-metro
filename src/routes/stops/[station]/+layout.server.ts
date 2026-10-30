@@ -1,5 +1,5 @@
 import type { LayoutServerLoad } from './$types';
-import stops from "$lib/server/stops";
+import stops from "#lib/server/stops.js";
 import { error } from '@sveltejs/kit';
 
 export const load: LayoutServerLoad = async ({ params, fetch, depends }) => {

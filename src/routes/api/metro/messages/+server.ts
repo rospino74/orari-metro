@@ -1,5 +1,4 @@
 import type { RequestHandler } from './$types';
-import { json } from '@sveltejs/kit';
 
 type Stato = { stato?: Array<{ categoria: string, messaggio: string }> }
 
@@ -26,5 +25,5 @@ export const GET: RequestHandler = async ({ setHeaders, fetch }) => {
         'Cache-Control': 'max-age=1800'
     });
 
-    return json(out);
+    return Response.json(out);
 };

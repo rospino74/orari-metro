@@ -1,9 +1,9 @@
 <script lang="ts">
     import type { PageData } from "./$types";
 
-    import TransitForecast from "$lib/components/TransitForecast.svelte";
-    import Spacer from "$lib/components/Spacer.svelte";
-    import ScrollOverflow from "$lib/components/ScrollOverflow.svelte";
+    import TransitForecast from "#lib/components/TransitForecast.svelte";
+    import Spacer from "#lib/components/Spacer.svelte";
+    import ScrollOverflow from "#lib/components/ScrollOverflow.svelte";
     import { invalidate } from "$app/navigation";
     import { onMount } from "svelte";
 

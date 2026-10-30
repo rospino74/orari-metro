@@ -1,5 +1,5 @@
 <div>
-    <h2><slot /></h2>
+    <span><slot /></span>
 </div>
 <style>
     @reference "../../app.css";
@@ -21,7 +21,7 @@
         @apply w-16 mr-4 flex-[0_1_4rem];
     }
 
-    h2 {
-        @apply  text-neutral-500 text-4xl shrink-0;
+    span {
+        @apply text-neutral-500 text-4xl shrink-0;
     }
 </style>

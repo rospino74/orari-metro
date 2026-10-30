@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { dateFromItalianTime, toTitleCase } from "$lib/utils/utils"
+import { dateFromItalianTime, toTitleCase } from "#lib/utils/utils.js"
 
 export default async function (stop: BusStop): Promise<Array<Transit>> {
     let code;

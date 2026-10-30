@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
-import stops from "$lib/server/stops";
-import { serializeBusStopsAsParam } from '$lib/utils/serialize';
+import stops from "#lib/server/stops.js";
+import { serializeBusStopsAsParam } from '#lib/utils/serialize.js';
 
 export const load: PageServerLoad = async ({ params, fetch, depends }) => {
 	const stationID = params.station;
